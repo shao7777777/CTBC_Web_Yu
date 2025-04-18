@@ -37,18 +37,12 @@ var swiper = new Swiper(".Swiper-banner", {
 });
 
 var swiper = new Swiper(".Swiper-feature", {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 20,
     loop: true,
     grabCursor: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },
-    breakpoints: { // 響應式
-        640: {
-            slidesPerView: 3,
-            // spaceBetween: 20,
-        },
     },
 });
