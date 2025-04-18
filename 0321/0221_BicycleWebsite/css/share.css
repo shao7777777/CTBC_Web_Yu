@@ -1,0 +1,115 @@
+* {
+    /* font-family: 微軟正黑體; */
+    margin: 0;
+    padding: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* 靠右對齊 */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* 靠左對齊 */
+.justify-content-start {
+    justify-content: start;
+}
+
+/* 水平置中 */
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+/* 高度置中 */
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 15px 50px;
+
+    gap: 30px;
+    /* 調整文字與箭頭的間距 */
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+
+.section-space {
+    margin-bottom: 120px;
+}
+
+.content {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.content h2 {
+    font-size: 3rem;
+}
+
+.content h3 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* 手機板 */
+@media (max-width:768px) {
+    .section-space {
+        margin-bottom: 40px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.6rem;
+        padding: 0;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,150 @@
+/* about */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    /* 控制圖片大小 */
+    margin: 0 auto;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 遮罩 */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.overlay-1 {
+    box-shadow: -20px -20px #000000;
+}
+
+.overlay-2 {
+    box-shadow: 20px 20px #ebeaea;
+}
+
+/* 文字段落 */
+.about-content {
+    margin-left: 30px;
+}
+
+.about-content h3 {
+    padding-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* history card */
+.section-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.section-title span {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.history-card {
+    background-color: #eeeeee;
+    padding: 40px;
+}
+
+.card-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #c1c1c1;
+    /* 利用下邊界做出水平線分隔的效果 */
+}
+
+.history-item:last-child {
+    /* border-bottom: none; */
+}
+
+.card-item h3 {
+    font-weight: bold;
+    align-items: center;
+    margin: 0;
+    /* 使高度垂直置中，不因為字體大小、內外距等內部內容高度不同而錯位 */
+}
+
+.card-item span {
+    display: block;
+}
+
+.separator {
+    width: 25px;
+    height: 1px;
+    background: #aaa;
+    margin: 0 15px;
+    vertical-align: text-top;
+}
+
+.square {
+    border: 1px solid #298bcd;
+    background-color: #298bcd;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+}
+
+.card-item p {
+    font-size: 0.8rem;
+    align-items: center;
+    margin: 0;
+    /* 使高度垂直置中，不因為字體大小、內外距等內部內容高度不同而錯位 */
+}
+
+@media (max-width:768px) {
+    .img-wrapper img {
+        margin-bottom: 40px;
+    }
+
+    .overlay-1 {
+        box-shadow: -10px -10px #000000;
+    }
+
+    .overlay-2 {
+        box-shadow: 10px 10px #ebeaea;
+    }
+
+    .about-content {
+        margin-left: 10px;
+    }
+
+    .history-card {
+        padding: 20px;
+    }
+
+    .separator {
+        margin: 0 10px;
+    }
+
+    .square {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@media (max-width:576px) {
+    .separator {
+        margin: 0 5px;
+    }
+
+    .square {
+        margin-right: 5px;
+    }
+
+    .about-content {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,106 @@
+:root {
+	--info: #222;
+	--font-family: "Mulish", "Noto Sans TC", sans-serif;
+}
+
+*, ::after, ::before { margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-transition: all .2s linear; -moz-transition: all .2s linear; transition: all .2s linear; }
+*:focus { outline:  none; }
+
+body { overflow-x: hidden; overflow-y: overlay; margin: 0; min-height: 100vh; }
+
+header , footer , div , nav , article , hr , p , form , label , input , button , select , textarea , ul , li , img , svg , span , font , em , b , a , i { text-align: left; vertical-align: middle; word-wrap: break-word; word-break: break-word; line-height: 1.7; border-width: 0; font-family: var(--font-family), sans-serif; font-size: 16px; color: var(--info); }
+
+h1, h2, h3, h4, h5, h6 { word-wrap: break-word; word-break: break-word; line-height: 1.7; font-family: var(--font-family), sans-serif; color: var(--info); }
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 * { font-size: inherit; }
+h1, .h1 { font-weight: bold; font-size: 2em; }
+h2, .h2 { font-weight: bold; font-size: 1.5em; }
+h3, .h3 { font-weight: bold; font-size: 1.17em; }
+h4, .h4 { font-weight: bold; font-size: 1em; }
+h5, .h5 { font-weight: bold; font-size: .83em; }
+h6, .h6 { font-weight: bold; font-size: .67em; }
+
+em, i { font-style: inherit; }
+
+ul , ol { list-style: none; }
+
+img { max-width: 100%; }
+
+a , a:link , a:visited , a:hover { display: inline-block; text-decoration: none; white-space: pre-wrap; }
+
+.container { margin-inline: auto; width: min(95%, 1440px); }
+
+.flex-box { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3em 6%; }
+.flex-box .auto-box { width: 1%; flex: 1 1 auto;  }
+
+.list-box li { padding-block: 1.3em; border-bottom: 1px solid #d8d8d8; }
+.list-box li:last-child { border-bottom: 0; }
+
+
+
+header {
+	display: flex;
+	/* 子元素左右分散對齊 */
+	justify-content: space-between;
+	/* 子元素垂直置中對齊 */
+	align-items: center;
+	padding: 5px;
+}
+
+#cis img{
+	height: 50px;
+	padding: 8px;
+	margin-left: 15px;
+}
+
+#menu-btn {
+	display: none;
+}
+
+nav{
+	display: inline-flex;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	padding-right: 50px;
+}
+
+nav ul li a:hover {
+	color: blue;
+}
+
+@media (max-width:768px) {
+	#menu-btn {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+.banner img{
+	position: relative;
+}
+
+.banner-text {
+	position: absolute;
+	width: 50%;
+	bottom: 150px;
+	left: 50px;
+}
+
+.banner-text em {
+	color: #fff;
+	font-size: 3.5rem;
+	line-height: 1.2;
+
+}
+
+.banner-text h2 {
+	color: #fff;
+	padding-top: 20px;
+}

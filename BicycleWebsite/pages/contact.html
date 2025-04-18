@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 英文 -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- 中文 -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 頁面過度動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/share.css">
+    <link rel="stylesheet" href="/css/contact.css" />
+</head>
+<body>
+    <!-- desktop-menu -->
+    <section class="desktop-menu desktop-switch">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                    <a href="/index.html">
+                        <img src="/img/logo.png" alt="" class="img-logo">
+                    </a>
+                </div>
+                <div class="col-md-9 d-flex justify-content-end align-items-center padding-right-0">
+                    <ul class="desktop-menu-style">
+                        <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                        <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                        <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                        <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                        <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile-menu -->
+    <section class="mobile-menu mobile-switch">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-6 d-flex align-items-center">
+                    <a href="/index.html">
+                        <img src="/img/logo.png" alt="" class="img-logo">
+                    </a>
+                </div>
+                <!-- hamburger -->
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <a href="#" class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- hamburger-menu 的選單 -->
+        <div class="mobile-menu-toggle">
+            <ul class="mobile-menu-style">
+                <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- page banner + breadcrumb -->
+    <section class="page-banner d-flex align-items-center justify-content-center section-space">
+        <img src="/img/contact-Bg.jpg" alt="" class="img-fluid">
+        <div class="page-banner-text" data-aos="zoom-in">
+            <h1>Contact Us</h1>
+            <p>聯絡我們</p>
+        </div>
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/index.html">首頁</a> |
+                    <a href="./contact.html">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="/img/contact-01.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 align-content-center" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <div class="contact-content">
+                        <h3>展示地點</h3>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>地址</th>
+                                    <td>台南市北區西門路四段533巷77號</td>
+                                </tr>
+                                <tr>
+                                    <th>電話</th>
+                                    <td>+886-0-0000000</td>
+                                </tr>
+                                <tr>
+                                    <th>營業時間</th>
+                                    <td>週一至週五 11:00~19:00 / 週六、日 公休</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="social-icon">
+                            <ul class="icon-list d-flex">
+                                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                                <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- google 地圖 -->
+                <div class="map" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.062402422116!2d120.20781007572191!3d23.021480879174536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7701fd8173e5%3A0x958d7f4ae5ced53!2zNzA05Y-w5Y2X5biC5YyX5Y2A6KW_6ZaA6Lev5Zub5q61NTMz5be3NzfomZ8!5e0!3m2!1szh-TW!2stw!4v1743080590676!5m2!1szh-TW!2stw" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-2 align-items-center">
+                    <a href="/index.html"><img src="/img/logo2.png" alt="" class="img-logo"></a>
+                </div>
+                <div class="col-md-8">
+                    <ul class="footer-link-style">
+                        <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                        <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                        <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                        <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                        <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="icon-list d-flex">
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact">
+                        <p>TEL： +886-0-0000000</p>
+                        <p>EMAIL： xxxxxx@gmail.com</p>
+                        <p>ADDRESS： xxxxxx, Taiwan</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="copyright">
+                        <p>Copyright 2025 ©company name. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="../main.js"></script>
+
+    <!-- 動畫過渡效果 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // 初始化 AOS
+    </script>
+</body>
+</html>

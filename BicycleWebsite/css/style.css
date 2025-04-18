@@ -1,0 +1,428 @@
+/* banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    width: 45vw;
+}
+
+.banner-text p {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media (max-width:1440px) {
+    .banner-text h1 {
+        font-size: 3.2rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:1250px) {
+    .banner-text {
+        bottom: 90px;
+    }
+
+    .banner-text h1 {
+        font-size: 2.8rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .banner-text {
+        bottom: 70px;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .banner img {
+        height: 500px;
+    }
+
+    .banner-text {
+        bottom: 60px;
+        left: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.9rem;
+        width: 100%;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* intro */
+.intro {
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1rem;
+    padding-bottom: 80px;
+}
+
+@media (max-width:768px) {
+    .intro {
+        padding-left: 20px;
+        font-weight: normal;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+}
+
+/* 將 div 的左右 paddind 歸 0，避免超出螢幕寬度，造成左右卷軸的出現 */
+.aboutUs .row,
+.aboutUs .col-md-6 {
+    padding: 0;
+}
+
+.aboutUs .content {
+    padding-left: 60px;
+    padding-right: 0;
+    width: 85%;
+}
+
+.aboutUs h2 {
+    width: 50%;
+    padding-top: 30px;
+}
+
+@media (max-width:768px) {
+    .aboutUs .content {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .aboutUs .content h2 {
+        width: 100%;
+    }
+
+    .aboutUs .content p {
+        width: 90%;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+}
+
+/* feature */
+.feature-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-text h2 {
+    position: absolute;
+    width: 450px;
+    bottom: 160px;
+    left: 200px;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+}
+
+@media (max-width:1250px) {
+    .feature-text h2 {
+        bottom: 100px;
+        left: 130px;
+    }
+}
+
+@media (max-width:1024px) {
+    .feature-text h2 {
+        bottom: 80px;
+        left: 100px;
+    }
+}
+
+@media (max-width:992px) {
+    .feature-text h2 {
+        bottom: 60px;
+        left: 60px;
+    }
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    padding-right: 20px;
+}
+
+.feature-item:nth-last-child(1) {
+    padding-right: 0;
+}
+
+.feature-item img {
+    height: 50px;
+}
+
+/* 圖片垂直翻轉一圈 */
+.flip-img {
+    transition: transform 0.6s ease-in-out;
+}
+
+.flip-img:hover {
+    transform: rotateX(360deg);
+}
+
+.feature-item h4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-item p {
+    width: 80%;
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    .feature-text h2 {
+        width: 60%;
+        bottom: 30px;
+        left: 40px;
+        font-size: 1.2rem;
+    }
+
+    .feature-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .feature-item p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+/* serve */
+.serve .content {
+    padding-bottom: 60px;
+}
+
+.serve .content p {
+    width: 90%;
+}
+
+.img-overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width:768px) {
+    .img-overflow {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .serve .content {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .serve .content h2 {
+        padding-bottom: 10px;
+    }
+
+    .serve .content p {
+        width: 100%;
+        padding-bottom: 40px;
+        padding-right: 0;
+    }
+
+    /* 手機版時 img-3 圖片消失 */
+    .img-display-none {
+        display: none;
+    }
+}
+
+/* product */
+.product-img img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-series {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product .content {
+    padding-left: 20px;
+}
+
+.product-item h4 {
+    font-weight: bold;
+}
+
+.product-item p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.product .btn {
+    margin-top: 50px;
+}
+
+@media (max-width:768px) {
+    .content h3 {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .product .content {
+        margin: 0;
+        padding: 30px 10px 0;
+    }
+
+    .product-series {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+}
+
+/* specification */
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.specification-item span {
+    font-weight: bold;
+}
+
+.specification-item,
+.specification hr {
+    width: 70%;
+}
+
+@media (max-width:768px) {
+    .specification img {
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+
+    .specification-item,
+    .specification hr {
+        width: 90%;
+    }
+}
+
+/* commit */
+.justify-items-md-center {
+    justify-items: center;
+}
+
+/* 將 div 的左右 paddind 歸 0，避免超出螢幕寬度，造成左右卷軸的出現 */
+.commit .row,
+.commit .col-md-6 {
+    padding: 0;
+}
+
+.commit-img {
+    width: 55vw;
+}
+
+.commit .content {
+    width: 90%;
+    margin: 0;
+}
+
+.commit .content p {
+    width: 70%;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+@media (max-width:1024px) {
+    .commit .btn {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .commit .content {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .commit .content h3 {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .commit .btn {
+        display: none;
+    }
+}

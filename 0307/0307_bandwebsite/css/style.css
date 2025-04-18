@@ -1,0 +1,696 @@
+/* 控制選單的開關 */
+.mobile-switch {
+    display: none;
+}
+
+.mobile-menu-open {
+    display: none;
+}
+
+.desktop-switch {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .mobile-switch {
+        display: block;
+    }
+
+    .desktop-switch {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: block;
+    }
+}
+
+/* desktop-menu*/
+.img-logo {
+    width: auto;
+    height: 45px;
+}
+
+.desktop-menu img {
+    margin-left: 20px;
+}
+
+.desktop-menu-style {
+    padding-right: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.desktop-menu-style li {
+    display: inline-block;
+}
+
+.desktop-menu-style .link {
+    display: block;
+    color: #000000;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.desktop-menu-style .link:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.desktop-menu-style .link:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.padding-right-0 {
+    padding-right: 0;
+}
+
+
+/* mobile-menu */
+.mobile-menu .row {
+    height: 50px;
+}
+
+.mobile-menu img {
+    margin-left: 0;
+    height: 40px;
+}
+
+.mobile-menu .hamburger-menu {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.mobile-menu .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 8px;
+    background: #000;
+}
+
+.mobile-menu .hamburger-menu span:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.mobile-menu-toggle {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    /* 讓選單從 hamburger 下方出現 */
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    /* 預設隱藏 */
+    overflow: hidden;
+    /* 防止內容超出 */
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* 加入 active 類別時展開，產生「由上至下滑動展開」效果 */
+.mobile-menu-toggle.active {
+    max-height: 350px;
+}
+
+.mobile-menu-style {
+    display: block;
+    background: #000;
+    list-style: none;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    right: 0;
+
+    padding-left: 0;
+    margin: 0;
+
+}
+
+.mobile-menu-style .link {
+    display: block;
+    color: #fff;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.mobile-menu-style .link:hover {
+    background: #393939;
+    transition: 0.3s;
+}
+
+
+/* banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+}
+
+.banner-text h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    width: 50vw;
+}
+
+.banner-text p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media (max-width:1440px) {
+    .banner-text h1 {
+        font-size: 3.2rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:1250px) {
+    .banner-text {
+        bottom: 90px;
+    }
+
+    .banner-text h1 {
+        font-size: 2.8rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .banner-text {
+        bottom: 70px;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .banner img {
+        height: 500px;
+    }
+
+    .banner-text {
+        bottom: 60px;
+        left: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 1.9rem;
+        width: 100%;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* intro */
+.intro {
+    padding-left: 60px;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1rem;
+    padding-bottom: 80px;
+}
+
+@media (max-width:768px) {
+    .intro {
+        padding-left: 20px;
+        font-weight: normal;
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+}
+
+
+/* aboutUs */
+.aboutUs .content {
+    width: 90%;
+}
+
+.aboutUs h2 {
+    width: 50%;
+}
+
+@media (max-width:768px) {
+    .aboutUs {
+        width: 100%;
+    }
+
+    .aboutUs .content {
+        padding: 0 30px;
+    }
+
+    .aboutUs h2 {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .aboutUs p {
+        padding-bottom: 10px;
+    }
+}
+
+/* feature */
+.feature-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-text h2 {
+    position: absolute;
+    width: 450px;
+    bottom: 160px;
+    left: 200px;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+}
+
+@media (max-width:1250px) {
+    .feature-text h2 {
+        bottom: 100px;
+        left: 130px;
+    }
+}
+
+@media (max-width:1024px) {
+    .feature-text h2 {
+        bottom: 80px;
+        left: 100px;
+    }
+}
+
+@media (max-width:992px) {
+    .feature-text h2 {
+        bottom: 60px;
+        left: 60px;
+    }
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    padding-right: 20px;
+}
+
+.feature-item:nth-last-child(1) {
+    padding-right: 0;
+}
+
+.feature-item img {
+    height: 50px;
+}
+
+.feature-item h4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-item p {
+    width: 80%;
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    .feature-text h2 {
+        width: 60%;
+        bottom: 30px;
+        left: 40px;
+        font-size: 1.2rem;
+    }
+
+    .feature-item p {
+        width: 100%;
+    }
+}
+
+/* serve */
+.serve .content {
+    padding-bottom: 60px;
+}
+
+.serve .content p {
+    width: 90%;
+}
+
+.img-overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width:768px) {
+    .img-overflow {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .serve .content {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .serve .content h2 {
+        font-size: 2rem;
+    }
+
+    .serve .content h3 {
+        font-size: 1.6rem;
+    }
+
+    .serve .content p {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    /* 手機版時 img-3 圖片消失 */
+    .img-display-none {
+        display: none;
+    }
+}
+
+/* product */
+.product-img img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.product .content {
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.product-series {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-item h4 {
+    font-weight: bold;
+}
+
+.product-item p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.product .btn {
+    margin-top: 50px;
+}
+
+@media (max-width:768px) {
+    .content h3 {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .product .content {
+        margin: 0;
+        padding: 30px 10px 0;
+    }
+
+    .product-series {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+}
+
+/* specification */
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.specification-item span {
+    font-weight: bold;
+}
+
+.specification-item,
+.specification hr {
+    width: 70%;
+}
+
+@media (max-width:768px) {
+    .specification img {
+        padding-bottom: 30px;
+    }
+
+    .specification-item,
+    .specification hr {
+        width: 90%;
+    }
+}
+
+.pr0 {
+    padding-right: 0;
+}
+
+/* commit */
+.justify-items-md-center {
+    justify-items: center;
+}
+
+.commit-img {
+    width: 55vw;
+}
+
+.commit .content {
+    width: 90%;
+    margin: 0;
+}
+
+.commit .content p {
+    width: 70%;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+@media (max-width:992px) {
+    .commit .content {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .commit .content {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .commit .content h3 {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .commit .btn {
+        display: none;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer .img-logo {
+    padding-right: 20px;
+}
+
+.footer-link-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link-style li {
+    display: inline-block;
+    padding-right: 60px;
+}
+
+.footer-link-style li:last-child {
+    padding-right: 0;
+}
+
+.footer-link-style .link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link-style .link:hover {
+    text-decoration: underline;
+}
+
+.icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+
+    /* 電腦版 icon 垂直至右 */
+    justify-content: end;
+}
+
+.line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+.contact {
+    display: flex;
+    gap: 100px;
+}
+
+.contact p {
+    font-size: 0.7rem;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    /* 水平置右 */
+    text-align-last: right;
+    font-size: 0.7rem;
+}
+
+@media (max-width:1200px) {
+    .footer img {
+        height: 40px;
+        padding-right: 0;
+    }
+
+    .contact {
+        gap: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .footer img {
+        height: 38px;
+        padding-right: 0;
+    }
+
+    .footer-link-style li {
+        padding-right: 30px;
+        font-size: 0.8rem;
+    }
+
+    .footer-link-style li:first-child {
+        padding-left: 30px;
+    }
+
+    .contact {
+        gap: 10px;
+    }
+
+    .copyright {
+        text-align-last: left;
+    }
+}
+
+@media (max-width:768px) {
+    .footer .img-logo {
+        height: 35px;
+    }
+
+    .footer-link-style {
+        padding: 20px 0;
+    }
+
+    .footer-link-style li {
+        padding: 0;
+        padding-left: 35px;
+        font-size: 0.7rem;
+    }
+
+    .footer-link-style li:first-child {
+        padding-left: 0;
+    }
+
+    .icon-list {
+        /* 電腦版 icon 垂直至左 */
+        justify-content: start;
+        /* padding-left: 20px; */
+    }
+
+    .contact {
+        display: block;
+        font-size: 0.7rem;
+    }
+
+    .copyright {
+        padding-top: 5px;
+        /* 靠左對齊 */
+        text-align-last: left;
+        font-size: 0.6rem;
+    }
+
+}

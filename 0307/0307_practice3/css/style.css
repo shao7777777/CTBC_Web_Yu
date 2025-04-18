@@ -1,0 +1,90 @@
+* {
+    font-family: 微軟正黑體;
+}
+
+.container-fluid {
+    padding: 70px 40px 0 40px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    background: #858585;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+}
+
+/* banner */
+.banner img {
+    padding-bottom: 80px;
+}
+
+
+/* 單欄新聞 */
+.news-item {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.news-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.news-content {
+    /* flex: 1; */
+    margin-top: 30px;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.news-header h2 {
+    padding-right: 10px;
+}
+
+.news-header span {
+    font-size: 14px;
+}
+
+.news-content p{
+    padding-bottom: 30px;
+}
+
+/* 雙欄新聞 */
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.news-grid .news-item {
+    flex-direction: column;
+}
+
+.news-grid .news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    padding-top: 20px;
+}
+
+/* 右側 */
+.right img{
+    padding-bottom: 40px;
+}
+
+.right h1 {
+    padding-bottom: 20px;
+}

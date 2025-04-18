@@ -1,0 +1,558 @@
+* {
+    /* font-family: 微軟正黑體; */
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* 靠右對齊 */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* 靠左對齊 */
+.justify-content-start {
+    justify-content: start;
+}
+
+/* 水平置中 */
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+/* 高度置中 */
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+/* 控制選單的開關 */
+.mobile-switch {
+    display: none;
+}
+
+.mobile-menu-open {
+    display: none;
+}
+
+.desktop-switch {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .mobile-switch {
+        display: block;
+    }
+
+    .desktop-switch {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: block;
+    }
+}
+
+/* nav-bar desktop + mobile*/
+/* desktop-menu*/
+.img-logo {
+    width: auto;
+    height: 35px;
+}
+
+.desktop-menu img {
+    margin-left: 10px;
+}
+
+.desktop-menu-style {
+    padding-right: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.desktop-menu-style li {
+    display: inline-block;
+}
+
+.desktop-menu-style .link {
+    display: block;
+    color: #000000;
+    padding: 15px 25px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.desktop-menu-style .link:hover {
+    background: #000000;
+    color: #fff;
+}
+
+.desktop-menu-style .link:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.padding-right-0 {
+    padding-right: 0;
+}
+
+
+/* mobile-menu */
+.mobile-menu .row {
+    height: 50px;
+}
+
+.img-logo {
+    width: auto;
+    height: 35px;
+    margin-left: 0;
+}
+
+.mobile-menu .hamburger-menu {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.mobile-menu .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 8px;
+    background: #000;
+}
+
+.mobile-menu .hamburger-menu span:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.mobile-menu-toggle {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    /* 讓選單從 hamburger 下方出現 */
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    /* 預設隱藏 */
+    overflow: hidden;
+    /* 防止內容超出 */
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* 加入 active 類別時展開，產生「由上至下滑動展開」效果 */
+.mobile-menu-toggle.active {
+    max-height: 350px;
+}
+
+.mobile-menu-style {
+    display: block;
+    background: #000;
+    list-style: none;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    right: 0;
+
+    padding-left: 0;
+    margin: 0;
+}
+
+.mobile-menu-style li {
+    width: 100%;
+    display: flex;
+}
+
+.mobile-menu-style .link {
+    width: 100%;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.mobile-menu-style .link:hover {
+    background: #393939;
+    transition: 0.3s;
+}
+
+/* button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 15px 50px;
+
+    gap: 30px;
+    /* 調整文字與箭頭的間距 */
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+
+/* 文字段落 */
+.section-space {
+    margin-bottom: 120px;
+}
+
+.content {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.content h2 {
+    font-size: 3rem;
+}
+
+.content h3 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 30px;
+    line-height: 1.7;
+}
+
+@media (max-width:1024px) {
+    .section-space {
+        margin-bottom: 80px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .content h2 {
+        font-size: 2.5rem;
+    }
+
+    .content h3 {
+        font-size: 1.7rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 手機板 文字段落*/
+@media (max-width:768px) {
+    .section-space {
+        margin-bottom: 60px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content h3 {
+        font-size: 1.6rem;
+        padding: 0;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+        padding-bottom: 15px;
+        padding-right: 30px;
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.footer-link-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link-style li {
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 0.8rem;
+}
+
+.footer-link-style li:last-child {
+    padding-right: 0;
+}
+
+.footer-link-style .link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link-style .link:hover {
+    text-decoration: underline;
+}
+
+.icon-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+
+    /* 電腦版 icon 垂直至右 */
+    justify-content: end;
+}
+
+.line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid #fff;
+}
+
+.contact {
+    display: flex;
+    /* 電腦版由左至右排列 */
+    gap: 80px;
+}
+
+.contact p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.copyright p {
+    /* 水平置右 */
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:1200px) {
+    .footer .img-logo {
+        padding-right: 0;
+    }
+
+    .contact {
+        gap: 30px;
+    }
+
+    .copyright p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:992px) {
+    .footer-link-style li {
+        padding-right: 30px;
+        font-size: 0.8rem;
+    }
+
+    .footer-link-style li:first-child {
+        padding-left: 30px;
+    }
+
+    .contact {
+        gap: 10px;
+    }
+
+    .contact p {
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    .copyright p {
+        text-align: left;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-link-style {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-link-style li {
+        padding-right: 20px;
+    }
+
+    .icon-list {
+        /* 電腦版 icon 垂直至左 */
+        justify-content: start;
+        /* padding-left: 20px; */
+    }
+
+    .contact {
+        gap: 10px;
+        font-size: 0.7rem;
+    }
+
+    .copyright {
+        padding-top: 5px;
+        text-align-last: left;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-link-style li:first-child {
+        padding-left: 0px;
+    }
+
+    .contact {
+        display: block;
+        /* 由上至下排列 */
+    }
+}
+
+@media (max-width:576px) {
+    .footer-link-style {
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-link-style li {
+        padding-right: 35px;
+        padding-bottom: 20px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact p {
+        padding-bottom: 20px;
+
+    }
+}
+
+
+/* pages */
+/* page-banner */
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page-banner-text {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-banner-text h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.page-banner-text p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 麵包屑選單 */
+.breadcrumb-wrapper {
+    position: absolute;
+    width: 100%;
+    /* 占滿banner */
+    bottom: 0;
+    /* 固定在banner底部 */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: right;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 0.7rem;
+    gap: 5px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:768px) {
+    .page-banner-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .page-banner-text p {
+        font-size: 1.3rem;
+    }
+
+    .breadcrumb {
+        padding: 7px 0;
+    }
+}
+
+@media (max-width:576px) {
+    .page-banner-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .page-banner-text p {
+        font-size: 1rem;
+    }
+
+    .breadcrumb {
+        padding: 7px 0;
+    }
+}

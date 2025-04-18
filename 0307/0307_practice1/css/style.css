@@ -1,0 +1,45 @@
+* {
+    font-family: 微軟正黑體;
+}
+
+.container-fluid {
+    padding: 70px 40px 0 40px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* banner */
+.banner img {
+    padding-bottom: 20px;
+}
+
+/* product */
+.product-grid {
+    display: grid;
+    /* 3 欄，每欄平均佔 1fr（等分） */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-content {
+    justify-items: center;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+button {
+    background: #858585;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+}

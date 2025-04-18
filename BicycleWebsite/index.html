@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Ridelt!</title>
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 英文 -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- 中文 -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- 頁面過度動畫 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/share.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <!-- desktop-menu -->
+    <section class="desktop-menu desktop-switch">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="" class="img-logo">
+                    </a>
+                </div>
+                <div class="col-md-9 d-flex justify-content-end align-items-center padding-right-0">
+                    <ul class="desktop-menu-style">
+                        <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                        <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                        <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                        <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                        <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mobile-menu -->
+    <section class="mobile-menu mobile-switch">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- logo -->
+                <div class="col-6 d-flex align-items-center">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="" class="img-logo">
+                    </a>
+                </div>
+                <!-- hamburger -->
+                <div class="col-6 d-flex align-items-center justify-content-end">
+                    <a href="#" class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- hamburger-menu 的選單 -->
+        <div class="mobile-menu-toggle">
+            <ul class="mobile-menu-style">
+                <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner d-flex align-items-center section-space">
+        <img src="./img/banner.png" alt="" class="img-fluid">
+        <div class="banner-text" data-aos="zoom-in">
+            <h1>Your Ultimate Destination for Biking Enthusiasts</h1>
+            <p>探索世界，騎上單車！</p>
+        </div>
+    </section>
+
+    <!-- intro -->
+    <section class="intro section-space" data-aos="fade-up">
+        <h2>We're passionate about all things cycling</h2>
+        <p>歡迎！這裡為您提供提升騎乘體驗的一切。</p>
+        <button class="btn">
+            <span class="text">詳細內容</span>
+            <img src="./img/arrow.svg" alt="arrow" class="img-arrow">
+        </button>
+    </section>
+
+    <!-- aboutUs -->
+    <section class="aboutUs section-space">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                <img src="./img/img-1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                <div class="content">
+                    <h2>Premium Bikes</h2>
+                    <h3>關於我們</h3>
+                    <p>致力於提供卓越性能與品質的自行車，讓每位騎行愛好者都能享受騎乘體驗。我們精心挑選各項自行車，從公路車、登山車到混合動力車，滿足不同需求。我們不僅提供優質產品，更推廣騎行文化，分享專業知識與騎行指南，幫助騎士探索世界。無論是競速、通勤或是休閒騎行，我們都希望成為您最信賴的夥伴，一起馳騁無限可能。
+                    </p>
+                    <p>我們相信，每個人都能找到最適合自己的自行車，無論是日常通勤、戶外探索，還是專業競技。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature -->
+    <section class="feature section-space">
+        <div class="feature-img">
+            <img src="./img/img-2.jpg" alt="" class="img-fluid">
+            <div class="feature-text"  data-aos="fade-up" data-aos-duration="200">
+                <h2>Each bike is carefully selected for its performance</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./img/sport.svg" alt="" class="flip-img">
+                    <h4>高品質自行車</h4>
+                    <p>提供公路車、登山車、混合動力車等多種選擇，確保卓越性能與耐用性。</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./img/track.svg" alt="" class="flip-img">
+                    <h4>專業騎行指南</h4>
+                    <p>提供選車建議、保養技巧與最佳騎行路線，讓您的騎行體驗更順暢</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./img/bar.svg" alt="" class="flip-img">
+                    <h4>優質客戶服務</h4>
+                    <p>專業團隊隨時解答問題，提供購買建議與售後支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- serve -->
+    <section class="serve section-space d-flex">
+        <div class="container">
+            <div class="row">
+                <!-- 網頁版:img-3 圖片在右邊，手機版:圖片默認由上至下排列 -->
+                <div class="col-md-6 order-md-2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="./img/img-3.jpg" alt="" class="img-fluid img-overflow">
+                </div>
+                <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="content">
+                        <h2>Cost-effective transportation</h2>
+                        <h3>優質服務</h3>
+                        <p>提供公路車、登山車、混合動力車等多種選擇，確保卓越性能與耐用性。從長遠來看，騎自行車可以為你節省大量金錢，而且無需花費燃料費用。</p>
+                        <button class="btn">
+                            <span class="text">詳細內容</span>
+                            <img src="./img/arrow.svg" alt="arrow" class="img-arrow">
+                        </button>
+                    </div>
+                    <img src="./img/img-4.jpg" alt="" class="img-fluid img-display-none">
+                    <p></p>
+                    <img src="./img/img-5.jpg" alt="" class="img-fluid img-display-none">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product -->
+    <section class="product section-space">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 product-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img src="./img/img-5.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="content">
+                        <h2>Convenient and flexble</h2>
+                        <h3>產品系列</h3>
+                        <div class="product-series">
+                            <div class="product-item">
+                                <h4>公路車</h4>
+                                <p>輕量、速度導向，適合競技與長途旅行</p>
+                                <hr>
+                            </div>
+                            <div class="product-item">
+                                <h4>登山車</h4>
+                                <p>耐用、強韌，適應各種崎嶇地形</p>
+                                <hr>
+                            </div>
+                            <div class="product-item">
+                                <h4>混合動力車</h4>
+                                <p>結合公路車與登山車特性，適合日常通勤與休閒騎行</p>
+                                <hr>
+                            </div>
+                            <div class="product-item">
+                                <h4>電動自行車</h4>
+                                <p>配備電動輔助系統，提升騎乘樂趣</p>
+                            </div>
+                        </div>
+                        <button class="btn">
+                            <span class="text">詳細內容</span>
+                            <img src="./img/arrow.svg" alt="arrow" class="img-arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- specification -->
+    <section class="specification section-space">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="./img/img-6.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-1 justify-items-center" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <div class="specification-item d-flex justify-content-space-between align-items-center">
+                        <h3>90</h3>
+                        <span> 車架尺寸</span>
+                    </div>
+                    <hr>
+                    <div class="specification-item d-flex justify-content-space-between align-items-center">
+                        <h3>27</h3>
+                        <span> 車輪尺寸</span>
+                    </div>
+                    <hr>
+                    <div class="specification-item d-flex justify-content-space-between align-items-center">
+                        <h3>100</h3>
+                        <span> 自行車高度</span>
+                    </div>
+                    <hr>
+                    <div class="specification-item d-flex justify-content-space-between align-items-center">
+                        <h3>48</h3>
+                        <span>自行車高度</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- commit -->
+    <section class="commit">
+        <div class="row">
+            <div class="col-md-6 order-md-2 justify-items-md-center align-content-center" data-aos="fade-left">
+                <div class="content">
+                    <h2>Commitment to sustainability</h2>
+                    <h3>今天就開始你們的冒險吧！</h3>
+                    <p>擁抱公路的自由。探索隱藏的痕跡，征服新的挑戰，享受旅途中的每一刻。</p>
+                    <button class="btn">
+                        <span class="text">詳細內容</span>
+                        <img src="./img/arrow.svg" alt="arrow" class="img-arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1" data-aos="fade-right">
+                <img src="./img/img-7.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-2 align-items-center">
+                    <a href="#"><img src="./img/logo2.png" alt="" class="img-logo"></a>
+                </div>
+                <div class="col-md-8">
+                    <ul class="footer-link-style">
+                        <li><a href="/pages/about.html" class="link">關於我們</a></li>
+                        <li><a href="/pages/news.html" class="link">最新消息</a></li>
+                        <li><a href="/pages/product.html" class="link">產品系列</a></li>
+                        <li><a href="/pages/guide.html" class="link">騎行指南</a></li>
+                        <li><a href="/pages/contact.html" class="link">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="icon-list d-flex">
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact">
+                        <p>TEL： +886-0-0000000</p>
+                        <p>EMAIL： xxxxxx@gmail.com</p>
+                        <p>ADDRESS： xxxxxx, Taiwan</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="copyright">
+                        <p>Copyright 2025 ©company name. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+    <!-- 動畫過渡效果 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // 初始化 AOS
+    </script>
+</body>
+</html>
