@@ -201,8 +201,8 @@
 }
 
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 60px;
     margin-bottom: 20px;
 }

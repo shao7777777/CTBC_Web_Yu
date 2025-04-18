@@ -16,8 +16,11 @@
     <!-- 中文 -->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- 頁面過度動畫 -->
+    <!-- AOS 頁面過度動畫 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./css/share.css">
     <link rel="stylesheet" href="./css/style.css" />
@@ -79,10 +82,23 @@
 
     <!-- banner -->
     <section class="banner d-flex align-items-center section-space">
-        <img src="./img/banner.png" alt="" class="img-fluid">
-        <div class="banner-text" data-aos="zoom-in">
-            <h1>Your Ultimate Destination for Biking Enthusiasts</h1>
-            <p>探索世界，騎上單車！</p>
+        <!-- Swiper -->
+        <div class="swiper Swiper-banner">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" alt="" class="img-fluid">
+                    <div class="banner-text" data-aos="zoom-in">
+                        <h1>Your Ultimate Destination for Biking Enthusiasts</h1>
+                        <p>探索世界，騎上單車！</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -124,20 +140,51 @@
         </div>
         <div class="container">
             <div class="feature-grid">
-                <div class="feature-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="./img/sport.svg" alt="" class="flip-img">
-                    <h4>高品質自行車</h4>
-                    <p>提供公路車、登山車、混合動力車等多種選擇，確保卓越性能與耐用性。</p>
-                </div>
-                <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="./img/track.svg" alt="" class="flip-img">
-                    <h4>專業騎行指南</h4>
-                    <p>提供選車建議、保養技巧與最佳騎行路線，讓您的騎行體驗更順暢</p>
-                </div>
-                <div class="feature-item" data-aos="fade-up" data-aos-duration="1500">
-                    <img src="./img/bar.svg" alt="" class="flip-img">
-                    <h4>優質客戶服務</h4>
-                    <p>專業團隊隨時解答問題，提供購買建議與售後支持</p>
+                <div class="swiper Swiper-feature">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="500">
+                                <img src="./img/sport.svg" alt="" class="flip-img">
+                                <h4>高品質自行車</h4>
+                                <p>提供公路車、登山車、混合動力車等多種選擇，確保卓越性能與耐用性。</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./img/track.svg" alt="" class="flip-img">
+                                <h4>專業騎行指南</h4>
+                                <p>提供選車建議、保養技巧與最佳騎行路線，讓您的騎行體驗更順暢</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="1500">
+                                <img src="./img/bar.svg" alt="" class="flip-img">
+                                <h4>優質客戶服務</h4>
+                                <p>專業團隊隨時解答問題，提供購買建議與售後支持</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="500">
+                                <img src="./img/sport.svg" alt="" class="flip-img">
+                                <h4>高品質自行車</h4>
+                                <p>提供公路車、登山車、混合動力車等多種選擇，確保卓越性能與耐用性。</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./img/track.svg" alt="" class="flip-img">
+                                <h4>專業騎行指南</h4>
+                                <p>提供選車建議、保養技巧與最佳騎行路線，讓您的騎行體驗更順暢</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="feature-item" data-aos="fade-up" data-aos-duration="1500">
+                                <img src="./img/bar.svg" alt="" class="flip-img">
+                                <h4>優質客戶服務</h4>
+                                <p>專業團隊隨時解答問題，提供購買建議與售後支持</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -305,12 +352,16 @@
 
         </div>
     </footer>
-    <script src="main.js"></script>
 
-    <!-- 動畫過渡效果 -->
+    <!-- AOS 過渡動畫 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();  // 初始化 AOS
     </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>
