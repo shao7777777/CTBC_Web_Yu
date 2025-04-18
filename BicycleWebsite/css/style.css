@@ -200,6 +200,52 @@
     }
 }
 
+/* 跑馬燈 */
+.track {
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    overflow: h idden;
+    z-index: 0;
+    bottom: 0px;
+    white-space: nowrap
+}
+
+.track p {
+    font-weight: 300;
+    font-size:120px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+    color: #ffffff1c;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .track p{
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .track {
+        display: none;
+    }
+}
+
 .feature-grid {
     /* display: grid; */
     /* grid-template-columns: repeat(3, 1fr); */
