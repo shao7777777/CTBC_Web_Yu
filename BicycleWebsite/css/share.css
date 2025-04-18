@@ -597,3 +597,30 @@ body {
 .swiper-pagination-bullet-active {
     background: #7f7f7f;
 }
+
+/* 回到最上方 */
+#backToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible
+}
+
+#backToTop:hover {
+    background-color: #555
+}
