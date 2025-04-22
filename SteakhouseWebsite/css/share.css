@@ -1,0 +1,64 @@
+body {
+    font-weight: 500;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* 垂直置中 */
+.align-items-center {
+    align-items: center;
+}
+
+/* 水平置中 */
+.justify-content-center {
+    justify-content: center;
+}
+
+/* 水平置右 */
+.justify-content-end {
+    justify-content: end;
+}
+
+
+/* 控制選單的開關 */
+.mobile-switch {
+    display: none;
+}
+
+.mobile-menu-open {
+    display: none;
+}
+
+.desktop-switch {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .mobile-switch {
+        display: block;
+    }
+
+    .desktop-switch {
+        display: none;
+    }
+
+    .mobile-menu-open {
+        display: block;
+    }
+}
+
+.btn {
+    border: 1px solid #bfbfbf;
+    background: rgb(0, 0, 0, 0);
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 30px;
+    font-size: 0.6rem;
+}
