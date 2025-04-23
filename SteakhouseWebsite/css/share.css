@@ -67,13 +67,61 @@ body {
     margin-right: 30px;
 }
 
-/* 電腦版選單 */
-.desktop-menu {
+/* 電腦版、手機版選單 - 背景、遮罩*/
+.desktop-menu, .mobile-menu {
     position: relative;
+    overflow: hidden;
+}
+
+/* 背景圖容器 + 翻轉 */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
     background-image: url(../img/nav-bg.jpg);
     background-size: 110% auto;
+    /* 縮放圖片 */
     background-position: -50px -140px;
-    overflow: hidden;
+    /* 選取想要的照片位置 */
+
+    transform: scaleX(-1);
+    /* 水平翻轉 */
+    z-index: 1;
+}
+
+@media (max-width:1024px) {
+    .bg {
+        transition: 0.2s;
+        background-position: -50px -90px;
+    }
+}
+
+@media (max-width:768px) {
+    .bg {
+        transition: 0.2s;
+        background-position: -30px -70px;
+    }
+}
+
+/* 背景圖的半透明遮罩 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+
+/* 電腦版內容區塊 */
+.desktop-menu .container-fluid, .mobile-menu .container-fluid {
+    position: relative;
+    z-index: 3;
 }
 
 .img-logo {
@@ -108,37 +156,16 @@ body {
     .desktop-menu-style li {
         padding-right: 30px;
     }
-
 }
 
-/* 電腦版 nav-bg 遮罩 */
-.desktop-menu .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(0, 0, 0, 0.15);
-    z-index: 1;
-}
-
-.desktop-menu .container-fluid {
-    position: relative;
-    z-index: 2;
+@media (max-width:900px) {
+    .desktop-menu-style button {
+        display: none;
+    }
 }
 
 
-
-
-/* 手機板選單 */
-.mobile-menu {
-    position: relative;
-    background-image: url(../img/nav-bg.jpg);
-    background-size: 100% auto;
-    /* background-position: -50px -140px; */
-    z-index: 10;
-}
-
+/* 手機板內容區塊 */
 .mobile-menu .img-logo {
     height: 50px;
     margin: 10px 0;
@@ -150,7 +177,7 @@ body {
     width: 40px;
     height: 30px;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
 }
 
 .mobile-menu .hamburger-menu span {
@@ -165,30 +192,17 @@ body {
     margin-bottom: 0;
 }
 
-/* 手機板 nav-bg 遮罩 */
-.mobile-menu .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: rgb(0, 0, 0, 0.15);
-    z-index: 1;
-}
-
-.mobile-menu .container-fluid {
-    position: relative;
-    z-index: 2;
-}
-
 /* 手機板選單收合 */
 .mobile-menu-toggle {
     position: absolute;
-    top: 70px;  /* 讓選單從 hamburger 下方出現 */
+    top: 50px;
+    /* 讓選單從 hamburger 下方出現 */
     left: 0;
     width: 100%;
-    max-height: 0;  /* 預設隱藏 */
-    overflow: hidden;   /* 防止內容超出 */
+    max-height: 0;
+    /* 預設隱藏 */
+    overflow: hidden;
+    /* 防止內容超出 */
     transition: max-height 0.5s ease-in-out;
     z-index: 100;
 }

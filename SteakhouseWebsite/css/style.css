@@ -1,0 +1,19 @@
+/* banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.banner img {
+    /* height: 100%; */
+    object-fit: none;
+    /* 不自動縮放圖片 */
+    object-position: -2000px -850px;
+    /* 調整要對齊圖片哪一部分 */
+}
+
+/* .banner-text {} */
+.banner {
+    display: none;
+}
