@@ -35,6 +35,73 @@ table td {
     margin-bottom: 60px;
 }
 
+.form-container {
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+    width: 98%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 16px
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-right: 20px
+}
+
+textarea {
+    resize: vertical
+}
+
+input[type="submit"] {
+    width: 80px;
+    background-color: #7f7f7f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+input[type="submit"]:hover {
+    background-color: #898989
+}
+
 @media (max-width:768px) {
     .contact-content {
         margin-left: 0;
