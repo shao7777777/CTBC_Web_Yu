@@ -1,23 +1,73 @@
 /* banner */
 .banner {
-    overflow: hidden;
-    z-index: 5;
     position: relative;
-}
-
-.banner img {
-    /* object-fit: none; */
-    /* 不自動縮放圖片 */
-    /* object-position: -1800px -850px; */
-    /* 調整要對齊圖片哪一部分 */
-
-    object-fit: cover;
-
 }
 
 .banner-text {
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 50px;
     color: #fff;
+}
+
+.banner-text h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+@media (max-width:1024px) {
+    .banner-text {
+        top: 30%;
+        left: 5%;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5rem;
+        width: 500px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .banner-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:768px) {
+    .banner img {
+        height: 500px;
+    }
+
+    .banner-text {
+        top: 40%;
+        left: 5%;
+    }
+
+    .banner-text h1 {
+        font-size: 2rem;
+        width: 400px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .banner-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .banner-text p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:576px) {
+    .banner img {
+        height: 400px;
+    }
 }

@@ -1,5 +1,6 @@
 body {
     font-weight: 500;
+    background: #FFF6EC;
 }
 
 .img-fluid {
@@ -68,8 +69,7 @@ body {
 }
 
 /* 電腦版、手機版選單 - 背景、遮罩*/
-.desktop-menu,
-.mobile-menu {
+.desktop-menu {
     position: relative;
     overflow: hidden;
 }
@@ -125,14 +125,13 @@ body {
     }
 }
 
-
-/* 電腦版內容區塊 */
 .desktop-menu .container-fluid,
 .mobile-menu .container-fluid {
     position: relative;
     z-index: 3;
 }
 
+/* 電腦版內容區塊 */
 .img-logo {
     margin: 20px 0;
     padding-left: 30px;
@@ -201,8 +200,15 @@ body {
     margin-bottom: 0;
 }
 
+.mobile-menu {
+    position: absolute;
+    width: 100%;
+    /* z-index: 10; */
+}
+
 /* 手機板選單收合 */
 .mobile-menu-toggle {
+    padding: 0;
     top: 70px;
     /* 讓選單從 hamburger 下方出現 */
     left: 0;
