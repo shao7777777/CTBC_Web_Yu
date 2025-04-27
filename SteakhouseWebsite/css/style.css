@@ -18,6 +18,15 @@
     padding-bottom: 25px;
 }
 
+.banner-text h2 {
+    color: #fff;
+    font-weight: normal;
+}
+
+.banner-text p {
+    font-size: 1.1rem;
+}
+
 @media (max-width:1024px) {
     .banner-text {
         top: 30%;
@@ -69,5 +78,269 @@
 @media (max-width:576px) {
     .banner img {
         height: 400px;
+    }
+}
+
+/* welcome + discover */
+.intro {
+    padding: 80px 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-content h2 {
+    font-size: 2.4rem;
+    padding-bottom: 40px;
+}
+
+.welcome-content p {
+    width: 70%;
+    padding-bottom: 60px;
+}
+
+.welcome-img-box {
+    width: 70%;
+    /* 控制圖片寬度 */
+    border-radius: 12px;
+}
+
+.welcome-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.welcome-bg {
+    position: absolute;
+    top: 630px;
+    left: -120px;
+    width: 300px;
+    opacity: 0.2;
+    transform: rotateY(165deg);
+}
+
+/* .discover */
+.discover-bg {
+    position: relative;
+    padding-top: 120px;
+    padding-left: 40px;
+}
+
+.discover-bg .line {
+    display: inline-block;
+    height: 1px;
+    width: 400px;
+    background: #742f1f;
+}
+
+.discover-bg p {
+    color: #742f1f;
+    margin: 0;
+}
+
+.discover-bg img {
+    position: absolute;
+    top: 80px;
+    right: -160px;
+    width: 320px;
+    opacity: 0.2;
+}
+
+.discover-content {
+    padding-top: 140px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.discover-content h2 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.discover-content p {
+    padding-bottom: 20px;
+    width: 55%;
+}
+
+.discover-content .btn {
+    border: 1px solid #742f1f;
+    color: #742f1f;
+    font-weight: bold;
+}
+
+.discover-content .btn:hover {
+    transition: 0.5s;
+    background: #742f1f;
+    color: #fff;
+}
+
+.discover-img {
+    position: absolute;
+    top: 0px;
+    right: -380px;
+    width: 480px;
+    transform: rotateY(180deg);
+}
+
+.discover-overlay {
+    position: absolute;
+    bottom: 120px;
+    right: 150px;
+    width: 130px;
+}
+
+@media (max-width:1440px) {
+    .intro {
+        padding: 70px;
+    }
+
+    .discover-bg {
+        padding-left: 0;
+    }
+
+    .discover-bg img {
+        right: -160px;
+        width: 320px;
+    }
+
+    .discover-bg .line {
+        width: calc(100% - 150px);
+    }
+
+    .discover-content {
+        padding-left: 0;
+    }
+
+    .discover-img {
+        width: 480px;
+        right: -280px;
+    }
+
+    .discover-overlay {
+        bottom: 150px;
+        right: 120px;
+        width: 130px;
+    }
+}
+
+@media (max-width:1024px) {
+    .intro {
+        padding: 60px;
+    }
+
+    .welcome-content h2 {
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .welcome-content p {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .welcome-img-box {
+        width: 80%;
+    }
+
+    .welcome-img-box img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 12px;
+        object-fit: contain;
+    }
+
+    .welcome-bg {
+        top: 600px;
+    }
+
+    /* .discover */
+    .discover-bg {
+        padding-left: 0;
+        padding-top: 100px;
+    }
+
+    .discover-bg img {
+        top: 70px;
+    }
+
+    .discover-img {
+        width: 430px;
+    }
+
+    .discover-overlay {
+        bottom: 100px;
+        right: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .intro {
+        padding: 40px;
+    }
+
+    .welcome-content h2 {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+
+    .welcome-content p {
+        width: 80%;
+        padding-bottom: 60px;
+        font-size: 0.9rem;
+    }
+
+    .welcome-img-box {
+        width: 80%;
+    }
+
+    .welcome-bg {
+        top: 400px;
+        left: -120px;
+        width: 250px;
+    }
+
+    /* .discover */
+    .discover-bg {
+        padding-top: 80px;
+    }
+
+    .discover-bg .line {
+        width: calc(100% - 100px);
+    }
+
+    .discover-bg p {
+        font-size: 0.9rem;
+    }
+
+    .discover-bg img {
+        top: 50px;
+        right: -150px;
+        width: 270px;
+    }
+
+    .discover-content {
+        padding-top: 120px;
+    }
+
+    .discover-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .discover-content p {
+        font-size: 0.9rem;
+    }
+
+    .discover-img {
+        top: 30px;
+        right: -200px;
+        width: 320px;
+    }
+
+    .discover-overlay {
+        bottom: 50px;
+        right: 60px;
+        width: 100px;
     }
 }

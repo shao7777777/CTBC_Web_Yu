@@ -1,6 +1,6 @@
 body {
-    font-weight: 500;
-    background: #FFF6EC;
+    font-weight: 400;
+    background-color: #fff6ec;
 }
 
 .img-fluid {
@@ -60,12 +60,11 @@ body {
     border: 1px solid #bfbfbf;
     background: rgb(0, 0, 0, 0);
     color: #fff;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 5px 30px;
     font-size: 0.6rem;
     font-weight: bold;
-
-    margin-right: 30px;
+    text-decoration: none;
 }
 
 /* 電腦版、手機版選單 - 背景、遮罩*/
@@ -121,7 +120,7 @@ body {
 
 @media (max-width:768px) {
     .overlay {
-        height:70px;
+        height: 70px;
     }
 }
 
@@ -154,10 +153,22 @@ body {
     list-style: none;
     text-decoration: none;
     color: #fff;
+    position: relative;
+    transition: 0.5s;
 }
 
-.desktop-menu-style .link:hover {
-    text-decoration: underline;
+/* 下划線動畫 */
+.desktop-menu-style .link::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.desktop-menu-style .link:hover::after {
+    width: 100%;
 }
 
 @media (max-width:1024px) {
@@ -167,7 +178,7 @@ body {
 }
 
 @media (max-width:900px) {
-    .desktop-menu-style button {
+    .desktop-menu-style .btn {
         display: none;
     }
 }
@@ -256,4 +267,10 @@ body {
 .mobile-menu-style .link:hover {
     background: #393939;
     transition: 0.3s;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #6F1C11;
+    font-weight: 700;
 }
