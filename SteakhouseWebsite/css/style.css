@@ -83,7 +83,7 @@
 
 /* welcome + discover */
 .intro {
-    padding: 80px 200px;
+    padding: 100px 200px;
     position: relative;
     overflow: hidden;
 }
@@ -101,7 +101,6 @@
 .welcome-img-box {
     width: 70%;
     /* 控制圖片寬度 */
-    border-radius: 12px;
 }
 
 .welcome-img-box img {
@@ -342,5 +341,142 @@
         bottom: 50px;
         right: 60px;
         width: 100px;
+    }
+}
+
+.explore .container-fluid {
+    padding: 0;
+}
+
+.explore-image-box {
+    width: 80%;
+}
+
+.explore-image-box img {
+    border-top-right-radius: 15px;
+}
+
+.explore-card {
+    background: #6F1C11;
+    width: 35%;
+    height: 90%;
+}
+
+.explore {
+    position: relative;
+}
+
+.explore-card {
+    position: absolute;
+    top: 40%;
+    right: 40px;
+}
+
+/* mask的方式改變png顏色 */
+.explore-overlay {
+    width: 45%;
+    height: 45%;
+    background-color: #ffe6e6;
+    /* 要顯示的顏色 */
+    mask: url('../img/asset4.png') no-repeat center / contain;
+    -webkit-mask: url('../img/asset4.png') no-repeat center / contain;
+    opacity: 0.15;
+    margin-left: 20px;
+
+    position: relative;
+}
+
+.explore-card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+
+.explore-card-content h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.explore-card-content h4 {
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.explore-card-content p {
+    font-size: 0.9rem;
+}
+
+@media (max-width:1200px) {
+    .explore-card-content h2 {
+        font-size: 2rem;
+    }
+
+    .explore-card-content h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:950px) {
+    .explore-card-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .explore-card-content h4 {
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .explore-card-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .explore-card-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .explore-card-content h4 {
+        font-size: 1rem;
+    }
+
+    .explore-card {
+        width: 45%;
+        height: 110%;
+    }
+}
+
+@media (max-width:700px) {
+    .explore-image-box {
+        width: 100%;
+    }
+
+    .explore-image-box img {
+        border-radius: 0;
+    }
+
+    .explore-card {
+        top: 70%;
+        right: 20%;
+        width: 50%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .explore-card {
+        width: 60%;
+        height: 120%;
+    }
+
+    .explore-card-content {
+        width: 80%;
     }
 }

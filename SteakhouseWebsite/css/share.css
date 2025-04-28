@@ -8,6 +8,20 @@ body {
     height: auto;
 }
 
+h2 {
+    font-size: 2rem;
+    color: #6F1C11;
+    font-weight: 700;
+}
+
+.section-space {
+    margin-bottom: 60px;
+}
+
+.img-radius {
+    border-radius: 15px;
+}
+
 .d-flex {
     display: flex;
 }
@@ -267,10 +281,4 @@ body {
 .mobile-menu-style .link:hover {
     background: #393939;
     transition: 0.3s;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #6F1C11;
-    font-weight: 700;
 }
