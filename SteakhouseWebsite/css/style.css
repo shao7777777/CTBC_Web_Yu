@@ -108,6 +108,12 @@
     max-height: 100%;
     border-radius: 12px;
     object-fit: contain;
+    transition: 0.3s;
+}
+
+.welcome-img-box img:hover {
+    transition: 0.3s;
+    scale: 95%;
 }
 
 .welcome-bg {
@@ -370,6 +376,12 @@
     position: absolute;
     top: 40%;
     right: 40px;
+    transition: 0.3s;
+}
+
+.explore-card:hover {
+    transition: 0.3s;
+    scale: 105%;
 }
 
 /* mask的方式改變png顏色 */
@@ -472,11 +484,120 @@
 @media (max-width:576px) {
 
     .explore-card {
-        width: 60%;
-        height: 120%;
+        width: 65%;
+        height: 130%;
     }
 
     .explore-card-content {
         width: 80%;
+    }
+}
+
+/* news */
+.news {
+    padding-top: 150px;
+}
+
+.news h2 {
+    padding-bottom: 30px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    transition: 0.3s;
+}
+
+.news-item:hover {
+    box-shadow: 8px 8px  rgb(111, 28, 17, 0.8);
+    border-radius: 15px;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.news-item-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.news-item-content span {
+    color: #8c8c88;
+}
+
+.news-item-content h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.news-item-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.news-item-content a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #6F1C11;
+    transition: 0.3s;
+}
+
+.news-item-content a:hover::after {
+    width: 75px;
+}
+
+@media (max-width:1024px) {
+    .news-item-content h5 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .news-item-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .news-item-content span,
+    .news-item-content a {
+        font-size: 0.8rem;
+    }
+
+    .news-item-content h5 {
+        font-size: 1.1rem;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width:700px) {
+    .news {
+        padding-top: 230px;
+    }
+}
+
+@media (max-width:576px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news {
+        padding-top: 160px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
