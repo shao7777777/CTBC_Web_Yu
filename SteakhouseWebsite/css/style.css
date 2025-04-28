@@ -513,7 +513,7 @@
 }
 
 .news-item:hover {
-    box-shadow: 8px 8px  rgb(111, 28, 17, 0.8);
+    box-shadow: 8px 8px rgb(111, 28, 17, 0.8);
     border-radius: 15px;
     transform: translateY(-5px);
     transition: 0.3s;
@@ -600,4 +600,24 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+}
+
+/* quote */
+.quote {
+    border-top: 80px;
+}
+
+.quote .text {
+    text-align: center;
+}
+
+.quote .text h2 {
+    width: 30%;
+}
+
+.quotation-mark {
+    display: flex;
+    align-items: start !important;
+    font-size: 6rem;
+    color: #F29B30;
 }
