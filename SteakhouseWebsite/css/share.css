@@ -283,3 +283,22 @@ h2 {
     background: #393939;
     transition: 0.3s;
 }
+
+/* footer */
+footer {
+    background: #6F1C11;
+    color: #fff;
+}
+
+footer .row {
+    padding: 40px 100px;
+}
+
+footer .img-logo {
+    padding-left: 0;
+
+}
+
+.align-items-space-between {
+    align-items: space-between;
+}

@@ -509,7 +509,8 @@
 
 /* news */
 .news {
-    padding-top: 150px;
+    padding: 150px 180px 0 180px;
+
 }
 
 .news h2 {
@@ -619,6 +620,7 @@
 /* quote */
 .quote {
     margin-top: 100px;
+    padding-bottom: 50px;
     position: relative;
 }
 
