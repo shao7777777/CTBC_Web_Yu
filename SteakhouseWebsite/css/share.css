@@ -311,7 +311,7 @@ footer {
 }
 
 footer .container {
-    padding: 50px 130px;
+    padding: 40px 130px;
 }
 
 footer h4 {
@@ -382,17 +382,17 @@ footer .copyright {
 }
 
 .copyright p {
-    padding: 40px 180px;
+    padding: 30px 180px;
     margin-bottom: 0;
 }
 
 @media (max-width:1200px) {
     footer .container {
-        padding: 50px 60px;
+        padding: 30px 60px;
     }
 
     .copyright p {
-        padding: 40px 100px;
+        padding: 30px 100px;
     }
 }
 
