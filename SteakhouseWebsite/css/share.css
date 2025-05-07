@@ -198,7 +198,7 @@ h2 {
 }
 
 /* 下划線動畫 */
-.desktop-menu-style .link::after {
+.desktop-menu-style .link::after, .footer-menu-style .link::after {
     content: " ";
     display: block;
     width: 0%;
@@ -207,7 +207,7 @@ h2 {
     transition: 0.3s;
 }
 
-.desktop-menu-style .link:hover::after {
+.desktop-menu-style .link:hover::after, .footer-menu-style .link:hover::after {
     width: 100%;
 }
 
@@ -316,13 +316,18 @@ footer {
 }
 
 footer .container {
-    padding: 30px 50px;
+    padding: 30px 50px 0;
 }
 
 footer h4 {
     font-size: 1.2rem;
     color: #F29B30;
     padding-bottom: 10px;
+}
+
+footer .logo-link {
+    height: 70px;
+    width: fit-content;
 }
 
 footer .img-logo {
@@ -353,11 +358,6 @@ footer .img-logo {
     text-decoration: none;
     color: #fff;
     font-size: 0.9rem;
-}
-
-.footer-menu-style .link:hover {
-    text-decoration: underline;
-    transition: 0.3s;
 }
 
 .footer-contact {
@@ -439,15 +439,15 @@ footer .copyright {
 
     .footer-menu-style li {
         display: inline-block;
+        padding-right: 10px;
     }
 
     .footer-menu-style .link {
-        padding-right: 30px;
         font-size: 0.8rem;
     }
 
     .footer-contact {
-        padding: 20px 40px 0 0;
+        padding: 20px 75px 0 0;
     }
 
     .footer-contact p {
@@ -534,5 +534,131 @@ footer .copyright {
         padding: 10px 20px;
         bottom: 80px;
         right: 30px;
+    }
+}
+
+/* pages */
+/* page-banner */
+.page-banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    /* 設定圖片要顯示的高度 */
+    overflow: hidden;
+}
+
+.page-banner img {
+    width: 130%;
+    /* 讓圖片撐滿容器 */
+    object-fit: cover;
+    object-position: center center;
+    z-index: 0;
+}
+
+.page-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* 白色半透明遮罩 */
+    pointer-events: none;
+    z-index: 1;
+}
+
+.page-banner-text {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.page-banner-text h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.page-banner-text p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* 麵包屑選單 */
+.breadcrumb-wrapper {
+    position: absolute;
+    width: 100%;
+    /* 占滿banner */
+    bottom: 0;
+    /* 固定在banner底部 */
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 0;
+    color: #fff;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 下划線動畫 */
+.breadcrumb a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover::after {
+    width: 100%;
+}
+
+@media (max-width:1024px) {
+    .page-banner {
+        height: 600px;
+    }
+}
+
+@media (max-width:768px) {
+    .page-banner {
+        height: 500px;
+    }
+
+    .page-banner-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .page-banner-text p {
+        font-size: 1.1rem;
+    }
+
+    .breadcrumb {
+        padding: 7px 0;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:576px) {
+    .page-banner {
+        height: 400px;
+    }
+
+    .page-banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .page-banner-text p {
+        font-size: 0.8rem;
     }
 }
