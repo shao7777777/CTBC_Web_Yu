@@ -137,7 +137,7 @@
 .discover-bg .line {
     display: inline-block;
     height: 1px;
-    width: 310px;
+    width: 350px;
     background: #742f1f;
 }
 
@@ -694,7 +694,6 @@
     top: 50%;
     left: 50%;
 
-    width: 200%;
     transform: translate(-50%, -50%);
 }
 
@@ -704,7 +703,7 @@
 
     width: 400%;
     height: 250%;
-    transform: translate(-83.5%, -22%);
+    transform: translate(-86%, -25%);
 }
 
 .box-4 img {
@@ -713,7 +712,7 @@
 
     width: 400%;
     height: 250%;
-    transform: translate(-83%, -75%);
+    transform: translate(-86%, -75%);
 }
 
 /* 控制每個 box 的格線位置與大小 */

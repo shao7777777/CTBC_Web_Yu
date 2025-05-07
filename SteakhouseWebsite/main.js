@@ -13,4 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
             mobileMenu.classList.remove("active");
         }
     });
+
+    // 回到最上方
+    const topButton = document.getElementById('backToTop');
+    // 顯示/隱藏按鈕(淡入淡出)
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            topButton.classList.add('show');
+        } else {
+            topButton.classList.remove('show');
+        }
+    });
+    // 點擊後平滑滾動至最上方
+    topButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });

@@ -33,7 +33,6 @@ h2 {
 
 .section-space {
     margin-bottom: 60px;
-    margin-bottom: 60px;
 }
 
 .img-radius {
@@ -102,6 +101,12 @@ h2 {
     font-size: 0.6rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background: #fff;
+    color: #000;
 }
 
 /* 電腦版、手機版選單 - 背景、遮罩*/
@@ -311,11 +316,11 @@ footer {
 }
 
 footer .container {
-    padding: 40px 130px;
+    padding: 30px 50px;
 }
 
 footer h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #F29B30;
     padding-bottom: 10px;
 }
@@ -323,8 +328,9 @@ footer h4 {
 footer .img-logo {
     padding-left: 0;
     margin: 0;
-    height: 80px;
-    padding-right: 150px;
+    height: 70px;
+    padding-left: 0;
+    padding-right: 200px;
 }
 
 .footer-menu {
@@ -339,20 +345,24 @@ footer .img-logo {
     text-decoration: none;
 }
 
+.footer-menu-style li {
+    padding-bottom: 10px;
+}
+
 .footer-menu-style .link {
     text-decoration: none;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footer-menu-style .link:hover {
     text-decoration: underline;
-    text-transform: 0.3s;
+    transition: 0.3s;
 }
 
 .footer-contact {
-    font-size: 0.8rem;
-    padding: 10px 50px 0 30px;
+    font-size: 0.9rem;
+    padding: 10px 60px 0 20px;
 }
 
 .footer-contact p {
@@ -364,7 +374,7 @@ footer .img-logo {
 }
 
 .footer-social i {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -374,7 +384,7 @@ footer .img-logo {
 }
 
 footer .copyright {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .copyright {
@@ -384,6 +394,12 @@ footer .copyright {
 .copyright p {
     padding: 30px 180px;
     margin-bottom: 0;
+}
+
+@media (max-width:1440px) {
+    .copyright p {
+        padding: 30px 130px;
+    }
 }
 
 @media (max-width:1200px) {
@@ -398,17 +414,22 @@ footer .copyright {
 
 @media (max-width:1024px) {
     footer .img-logo {
-        height: 60px;
-        padding-right: 80px;
+        height: 70px;
+        padding-right: 70px;
+    }
+
+    .footer-contact {
+        padding-right: 20px;
     }
 }
 
 @media (max-width:768px) {
     footer .container {
-        padding: 30px 40px;
+        padding: 40px 40px;
     }
 
     footer .img-logo {
+        height: 60px;
         padding-right: 100px;
     }
 
@@ -422,48 +443,38 @@ footer .copyright {
 
     .footer-menu-style .link {
         padding-right: 30px;
-    }
-
-    .footer-contact {
-        padding: 0;
-        padding: 20px 70px 0 0;
-    }
-
-    .footer-social {
-        padding-top: 20px;
-    }
-
-    .copyright p {
-        padding: 20px 60px;
-    }
-}
-
-@media (max-width:768px) {
-    footer .img-logo {
-        height: 50px;
-        padding-right: 100px;
-    }
-
-    .footer-menu-style .link {
-        padding-right: 30px;
+        font-size: 0.8rem;
     }
 
     .footer-contact {
         padding: 20px 40px 0 0;
     }
 
+    .footer-contact p {
+        font-size: 0.8rem;
+    }
+
+    .footer-social {
+        padding-top: 20px;
+    }
+
+    .footer-social i {
+        font-size: 1.2rem;
+    }
+
     .copyright p {
         padding: 20px 60px;
+        font-size: 0.7rem;
     }
 }
 
 @media (max-width:576px) {
-
     footer .container {
         padding: 20px;
     }
 
     footer .img-logo {
+        height: 50px;
         padding-right: 50px;
     }
 
@@ -479,8 +490,49 @@ footer .copyright {
         font-size: 0.7rem;
     }
 
+    .footer-social i {
+        font-size: 1rem;
+    }
+
     .copyright p {
         padding: 15px;
         text-align: center;
+    }
+}
+
+/* 回到最上方 */
+#backToTop {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: #fff6ec;
+    color: #6F1C11;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background-color: #6F1C11;
+    color: #fff6ec;
+    border: 1px solid #fff6ec;
+}
+
+@media (max-width:768px) {
+    #backToTop {
+        padding: 10px 20px;
+        bottom: 80px;
+        right: 30px;
     }
 }
