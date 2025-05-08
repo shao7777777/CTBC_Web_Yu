@@ -75,12 +75,13 @@
 }
 
 .chef-quote {
-    padding-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .chef-quote h3 {
     width: 75%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #6F1C11;
     text-align: center;
     letter-spacing: 3px;
@@ -194,6 +195,15 @@
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .chef-quote {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .chef .content p {
+        width: 85%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -209,5 +219,13 @@
 @media (max-width: 576px) {
     .grid-container {
         grid-template-columns: 1fr;
+    }
+
+    .chef .content .subtitle {
+        margin-top: 30px;
+    }
+
+    .info-title {
+        padding-top: 0;
     }
 }

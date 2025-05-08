@@ -551,7 +551,7 @@ footer .copyright {
 }
 
 .page-banner img {
-    width: 130%;
+    width: 150%;
     /* 讓圖片撐滿容器 */
     object-fit: cover;
     object-position: center center;

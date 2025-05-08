@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    //
+    //手機板選單展開與收合
+    //
     const menuToggle = document.querySelector(".hamburger-menu");   // 選擇漢堡按鈕
     const mobileMenu = document.querySelector(".mobile-menu-toggle");   // 選擇選單容器
 
@@ -14,7 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
+    //
     // 回到最上方
+    //
     const topButton = document.getElementById('backToTop');
     // 顯示/隱藏按鈕(淡入淡出)
     window.addEventListener('scroll', () => {
@@ -31,4 +37,29 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: 'smooth'
         });
     });
+
+    //
+    // 分頁-產品一覽 按鈕切換菜單
+    //
+    const buttons = document.querySelectorAll(".menu-buttons button");
+    const groups = document.querySelectorAll(".menu-group");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Toggle active button
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            // Show corresponding menu group
+            const category = button.getAttribute("data-category");
+            groups.forEach((group) => {
+                if (group.classList.contains(category)) {
+                    group.classList.add("active");
+                } else {
+                    group.classList.remove("active");
+                }
+            });
+        });
+    });
+
 });
