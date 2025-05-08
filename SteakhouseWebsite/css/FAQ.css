@@ -1,0 +1,68 @@
+.faq {
+    padding: 50px 10px 0;
+}
+
+.faq-item {
+    background: #fff;
+    overflow: hidden;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.faq-question {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    /* 讓內容與 + 號垂直置中 */
+}
+
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    /* 放置在右側 */
+    font-size: 20px;
+}
+
+.faq-question span {
+    padding-right: 5px;
+}
+
+/* 利用 checkbox 控制展開/收起。搭配 :checked 來改變樣式。 */
+input[type="checkbox"] {
+    display: none;
+    /* 預設隱藏 checkbox */
+}
+
+/* 當 checkbox 被點擊，尾端加入 - 符號 */
+input[type="checkbox"]:checked+.faq-question::after {
+    content: '-';
+}
+
+.faq-answer {
+    max-height: 0;
+    /* 初始狀態為 0，隱藏內容 */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    /* 加上動畫過渡 */
+    padding: 0 15px;
+}
+
+input[type="checkbox"]:checked+.faq-question+.faq-answer {
+    max-height: 100px;
+    /* 展開區塊 */
+    padding: 15px 15px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:768px) {
+    .faq-item {
+        font-size: 0.9rem;
+    }
+}
