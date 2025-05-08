@@ -101,6 +101,7 @@ h2 {
     font-size: 0.6rem;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn:hover {
@@ -198,7 +199,8 @@ h2 {
 }
 
 /* 下划線動畫 */
-.desktop-menu-style .link::after, .footer-menu-style .link::after {
+.desktop-menu-style .link::after,
+.footer-menu-style .link::after {
     content: " ";
     display: block;
     width: 0%;
@@ -207,7 +209,8 @@ h2 {
     transition: 0.3s;
 }
 
-.desktop-menu-style .link:hover::after, .footer-menu-style .link:hover::after {
+.desktop-menu-style .link:hover::after,
+.footer-menu-style .link:hover::after {
     width: 100%;
 }
 
@@ -319,27 +322,24 @@ footer .container {
     padding: 30px 50px 0;
 }
 
+footer .logo-link {
+    height: 70px;
+}
+
+footer .img-logo {
+    margin: 0;
+    height: 70px;
+    padding-left: 0;
+}
+
 footer h4 {
     font-size: 1.2rem;
     color: #F29B30;
     padding-bottom: 10px;
 }
 
-footer .logo-link {
-    height: 70px;
-    width: fit-content;
-}
-
-footer .img-logo {
-    padding-left: 0;
-    margin: 0;
-    height: 70px;
-    padding-left: 0;
-    padding-right: 200px;
-}
-
 .footer-menu {
-    padding-right: 30px;
+    padding-right: 40px;
     padding-top: 10px;
 }
 
@@ -415,7 +415,10 @@ footer .copyright {
 @media (max-width:1024px) {
     footer .img-logo {
         height: 70px;
-        padding-right: 70px;
+    }
+
+    .footer-menu {
+        padding-right: 30px;
     }
 
     .footer-contact {
