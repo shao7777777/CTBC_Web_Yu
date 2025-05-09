@@ -96,6 +96,90 @@
         </div>
     </section>
 
+	<!-- contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 image-box">
+                    <img src="../img/welcome.jpg" alt="歡迎您" class="img-fluid">
+                </div>
+                <div class="col-md-6 align-content-center">
+                    <div class="contact-content">
+                        <h3>地點</h3>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>地址</th>
+                                    <td>台南市北區西門路四段533巷77號</td>
+                                </tr>
+                                <tr>
+                                    <th>電話</th>
+                                    <td>+886-0-0000000</td>
+                                </tr>
+                                <tr>
+                                    <th>營業時間</th>
+                                    <td>週一至週五 11:00~19:00 / 週六、日 公休</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="social-icon">
+                            <ul class="icon-list d-flex">
+                                <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                                <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- google 地圖 -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.062402422116!2d120.20781007572191!3d23.021480879174536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7701fd8173e5%3A0x958d7f4ae5ced53!2zNzA05Y-w5Y2X5biC5YyX5Y2A6KW_6ZaA6Lev5Zub5q61NTMz5be3NzfomZ8!5e0!3m2!1szh-TW!2stw!4v1743080590676!5m2!1szh-TW!2stw" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- 表單 -->
+                <div class="form-container">
+                    <h2>聯絡表單</h2>
+                    <form action="#" method="post">
+                        <!-- 姓名 -->
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                        <!-- Email -->
+                        <label for="email">Email：</label>
+                        <input type="email" id="email" name="email">
+                        <!-- 密碼 -->
+                        <label for="password">密碼：</label>
+                        <input type="password" id="password" name="password">
+                        <!-- 性別 -->
+                        <label>性別：</label>
+                        <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> 男</label>
+                        <label><input type="radio" name="gender" value="female"> 女</label>
+                        </div>
+                        <!-- 興趣 -->
+                        <label>興趣：</label>
+                        <div class="checkbox-group">
+                        <label><input type="checkbox" name="hobby" value="reading"> 閱讀</label>
+                        <label><input type="checkbox" name="hobby" value="sports"> 運動</label>
+                        </div>
+                        <!-- 城市 -->
+                        <label for="city">城市：</label>
+                        <select id="city" name="city">
+                        <option value="taipei">台北</option>
+                        <option value="taichung">台中</option>
+                        <option value="kaohsiung">高雄</option>
+                        </select>
+                        <!-- 留言 -->
+                        <label for="message">留言：</label>
+                        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                        <!-- 送出 -->
+                        <input type="submit" value="送出">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
 	<footer>
 		<div class="container">

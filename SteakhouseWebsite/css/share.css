@@ -373,14 +373,16 @@ footer h4 {
     padding-top: 10px;
 }
 
-.footer-social i {
+.footer-social .bi {
     font-size: 1.5rem;
     margin-right: 5px;
     margin-left: 5px;
+    transition: 0.3s;
 }
 
-.footer-social i:hover {
+.footer-social .bi:hover {
     color: #F29B30;
+    transition: 0.3s;
 }
 
 footer .copyright {
@@ -527,9 +529,9 @@ footer .copyright {
 }
 
 #backToTop:hover {
-    background-color: #6F1C11;
+    background-color: #B27233;
     color: #fff6ec;
-    border: 1px solid #fff6ec;
+    /* border: 1px solid #fff6ec; */
 }
 
 @media (max-width:768px) {

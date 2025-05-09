@@ -1,0 +1,166 @@
+.image-box,
+.contact-content {
+    padding-top: 50px;
+}
+
+.contact-content {
+    margin-left: 20px;
+}
+
+.contact-content h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+.table th {
+    color: #4c4c4c;
+    width: 30%;
+}
+
+.table th,
+table td {
+    padding-bottom: 20px;
+}
+
+.social-icon .icon-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+    justify-content: left;
+}
+
+.social-icon .icon-list li {
+    padding-right: 15px;
+}
+
+.social-icon .bi {
+    font-size: 1.8rem;
+    color: #3b3b3b;
+    transition: 0.3s;
+}
+
+.social-icon .bi:hover {
+    color: #B27233;
+    transition: 0.3s;
+}
+
+.map {
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+    width: 98%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 16px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 80px;
+    background-color: #A69E97;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #B27233;
+    transition: 0.3s;
+}
+
+@media (max-width:768px) {
+    .contact-content {
+        margin-left: 0;
+    }
+
+    .contact-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table th,
+    table td {
+        padding-bottom: 10px;
+    }
+
+    .social-icon .bi {
+        font-size: 1.5rem;
+        color: #3b3b3b;
+    }
+
+    .map {
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width:576px) {
+    .contact-content {
+        margin-top: 20px;
+    }
+
+    .map {
+        margin-top: 60px;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+}

@@ -65,6 +65,7 @@
 
 .menu-card:hover {
     transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 .menu-card img {
@@ -76,6 +77,11 @@
     font-size: 1.3rem;
     padding: 15px 16px 0;
     color: #6F1C11;
+}
+
+.menu-card:hover h3{
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .menu-card p {
