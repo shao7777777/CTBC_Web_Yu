@@ -355,8 +355,8 @@ body {
     }
 
     .discover-overlay {
-        bottom: 50px;
-        right: 100px;
+        bottom: 0px;
+        right: 30px;
         width: 100px;
     }
 }
@@ -367,8 +367,8 @@ body {
     }
 
     .discover-overlay {
-        bottom: 30px;
-        right: 80px;
+        bottom: -30px;
+        right: 30px;
         width: 90px;
     }
 }
