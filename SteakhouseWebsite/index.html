@@ -6,13 +6,14 @@
     <title>Welcome to Steakhouse!</title>
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 
     <!-- Link AOS's CSS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr. net/npm/swiper@11/swiper-bundle.min.css"/>
+	<!-- Animista CSS -->
+	<link rel="stylesheet" href="./css/animista.css" />
 
     <link rel="stylesheet" href="./css/share.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -92,7 +93,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="welcome-content" >
+					<div class="welcome-content" data-aos="fade-right" data-aos-duration="1000">
 						<h2>WELCOME TO THE <br> AMERICAN STEAKHOUSE</h2>
 						<p>手工鮮切USDA牛排、經典火烤豬肋排，香氣逼人一上桌就征服你的味蕾，今晚來點真正的美式豪邁！</p>
 						<div class="welcome-img-box">
@@ -101,7 +102,7 @@
 					</div>
 					<img src="./img/asset3.png" alt="leaf" class="img-fluid welcome-bg">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
 					<div class="discover-bg">
 						<span class="line"></span>
 						<p>Authentic American.</p>
@@ -124,10 +125,10 @@
 	<!-- explore -->
 	<section class="explore section-space">
 		<div class="container-fluid">
-			<div class="explore-image-box">
+			<div class="explore-image-box" data-aos="fade-right" data-aos-duration="500">
 				<img src="./img/place.jpg" alt="Steakhouse Environment" class="img-fluid">
 			</div>
-			<div class="explore-card img-radius">
+			<div class="explore-card img-radius" data-aos="zoom-in" data-aos-duration="1000">
 				<div class="explore-overlay"></div>
 				<div class="explore-card-content">
 					<h2>EXPLORE OUR RESTAURANT</h2>
@@ -145,7 +146,7 @@
 			<div class="row">
 				<h2>LATEST NEWS</h2>
 				<div class="news-grid">
-					<div class="news-item">
+					<div class="news-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
 						<img src="./img/news1.png" alt="News-Mother's Day" class="img-fluid">
 						<div class="news-item-content">
 							<span>2025-05-01</span>
@@ -153,7 +154,7 @@
 							<a href="./pages/news.html">view more</a>
 						</div>
 					</div>
-					<div class="news-item">
+					<div class="news-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
 						<img src="./img/news2.png" alt="News-Date for Steak" class="img-fluid">
 						<div class="news-item-content">
 							<span>2025-04-16</span>
@@ -161,7 +162,7 @@
 							<a href="./pages/news.html">view more</a>
 						</div>
 					</div>
-					<div class="news-item">
+					<div class="news-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
 						<img src="./img/news3.png" alt="News-Branch Store" class="img-fluid">
 						<div class="news-item-content">
 							<span>2025-03-01</span>
@@ -178,14 +179,14 @@
 	<section class="quote section-space">
 		<div class="quote-text d-flex align-items-center justify-content-center">
 			<div class="quotation-mark upper-quotation">“</div>
-			<h2>YOU HAVE NO IDEA WHAT'S AT STEAK HERE!</h2>
+			<h2 data-aos="zoom-out-down" data-aos-duration="500">YOU HAVE NO IDEA WHAT'S AT STEAK HERE!</h2>
 			<div class="quotation-mark bottom-quotation">“</div>
 		</div>
 		<div class="image-grid-box">
-			<div class="box box-1"><img src="./img/steak3.jpg" alt="" /></div>
-			<div class="box box-2"><img src="./img/steak3.jpg" alt="" /></div>
-			<div class="box box-3"><img src="./img/steak3.jpg" alt="" /></div>
-			<div class="box box-4"><img src="./img/steak3.jpg" alt="" /></div>
+			<div class="box box-1" data-aos="fade-up-right" data-aos-duration="800"><img src="./img/steak3.jpg" alt="" /></div>
+			<div class="box box-2" data-aos="zoom-out"><img src="./img/steak3.jpg" alt="" /></div>
+			<div class="box box-3" data-aos="fade-down-left" data-aos-duration="800"><img src="./img/steak3.jpg" alt="" /></div>
+			<div class="box box-4" data-aos="fade-up-left" data-aos-duration="800"><img src="./img/steak3.jpg" alt="" /></div>
 		</div>
 	</section>
 
@@ -235,13 +236,13 @@
 
 	<button id="backToTop">↑</button>
 
-    <!-- AOS JS -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script>
+    <!-- Link AOS's JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
         AOS.init();  // 初始化 AOS
-    </script> -->
+    </script>
 
-    <!-- Swiper JS -->
+    <!-- Link Swiper's JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
     <script src="main.js"></script>

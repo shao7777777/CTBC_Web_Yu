@@ -202,8 +202,8 @@
 
 .discover-overlay {
     position: absolute;
-    bottom: 100px;
-    right: 200px;
+    bottom: -20px;
+    right: 0;
     width: 140px;
 }
 
@@ -235,8 +235,7 @@
     }
 
     .discover-overlay {
-        bottom: 30px;
-        right: 140px;
+        right: 70px;
         width: 130px;
     }
 }
@@ -285,8 +284,8 @@
     }
 
     .discover-overlay {
-        bottom: 100px;
-        right: 120px;
+        bottom: 50px;
+        right: 50px;
         width: 120px;
     }
 }

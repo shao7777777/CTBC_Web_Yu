@@ -62,4 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    //
+    // 動畫在「畫面滾動到該區塊」時才開始
+    //
+
+    window.addEventListener("scroll", function () {
+        const fadeEl = document.querySelector(".flip-diagonal-1-tr");
+        const rect = fadeEl.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom >= 0;
+
+        if (inView) {
+            fadeEl.classList.add("animate");
+        }
+    });
+
 });
