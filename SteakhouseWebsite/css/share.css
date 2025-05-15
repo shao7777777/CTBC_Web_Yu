@@ -32,7 +32,8 @@ h2 {
 }
 
 .section-space {
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .img-radius {
@@ -312,6 +313,8 @@ h2 {
     transition: 0.3s;
 }
 
+
+
 /* footer */
 footer {
     background: #6F1C11;
@@ -319,7 +322,7 @@ footer {
 }
 
 footer .container {
-    padding: 30px 50px 0;
+    padding-top: 30px;
 }
 
 footer .logo-link {
@@ -398,25 +401,14 @@ footer .copyright {
     border-top: 1px solid rgb(255, 255, 255, 0.3);
 }
 
+.copyright .container {
+    padding-top: 0;
+}
+
 .copyright p {
-    padding: 30px 180px;
-    margin-bottom: 0;
-}
-
-@media (max-width:1440px) {
-    .copyright p {
-        padding: 30px 130px;
-    }
-}
-
-@media (max-width:1200px) {
-    footer .container {
-        padding: 30px 60px;
-    }
-
-    .copyright p {
-        padding: 30px 100px;
-    }
+    margin: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 @media (max-width:1024px) {
@@ -425,22 +417,32 @@ footer .copyright {
     }
 
     .footer-menu {
-        padding-right: 30px;
+        padding-right: 0px;
     }
 
     .footer-contact {
-        padding-right: 20px;
+        padding-right: 0;
+    }
+
+    .footer-social .bi {
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+
+    .copyright p {
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
 }
 
 @media (max-width:768px) {
-    footer .container {
-        padding: 40px 40px;
+    footer .logo-link {
+        padding-right: 120px;
+        height: 60px;
     }
 
     footer .img-logo {
         height: 60px;
-        padding-right: 100px;
     }
 
     .footer-menu {
@@ -449,7 +451,7 @@ footer .copyright {
 
     .footer-menu-style li {
         display: inline-block;
-        padding-right: 10px;
+        padding-right: 15px;
     }
 
     .footer-menu-style .link {
@@ -457,7 +459,9 @@ footer .copyright {
     }
 
     .footer-contact {
-        padding: 20px 75px 0 0;
+        padding: 0;
+        padding-right: 50px;
+        padding-bottom: 20px;
     }
 
     .footer-contact p {
@@ -473,27 +477,37 @@ footer .copyright {
     }
 
     .copyright p {
-        padding: 20px 60px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        padding-bottom: 25px;
+        padding-top: 25px;
     }
 }
 
 @media (max-width:576px) {
     footer .container {
-        padding: 20px;
+        width: 90%;
+    }
+
+    footer .logo-link {
+        padding-right: 0;
+        height: 50px;
     }
 
     footer .img-logo {
         height: 50px;
-        padding-right: 50px;
+        padding-right: 30px;
     }
 
     .footer-menu-style .link {
         font-size: 0.7rem;
     }
 
+    .footer-menu-style li {
+        padding-right: 5px;
+    }
+
     .footer-contact {
-        padding: 20px 15px 0 0;
+        padding-right: 30px;
     }
 
     .footer-contact p {
@@ -505,10 +519,11 @@ footer .copyright {
     }
 
     .copyright p {
-        padding: 15px;
-        text-align: center;
+        font-size: 0.7rem;
     }
 }
+
+
 
 /* 回到最上方 */
 #backToTop {

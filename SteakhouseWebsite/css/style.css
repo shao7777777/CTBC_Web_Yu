@@ -1,3 +1,13 @@
+.container {
+    width: 70%;
+}
+
+@media (max-width:1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
 /* banner */
 .banner {
     position: relative;
@@ -84,10 +94,9 @@
 
 /* welcome + discover */
 .intro {
-    padding: 120px 180px;
     position: relative;
     overflow: hidden;
-    /* width: 90%; */
+    padding-bottom: 150px;
 }
 
 .welcome-content h2 {
@@ -120,7 +129,7 @@
 
 .welcome-bg {
     position: absolute;
-    top: 630px;
+    bottom: 0;
     left: -120px;
     width: 300px;
     opacity: 0.2;
@@ -193,24 +202,14 @@
 
 .discover-overlay {
     position: absolute;
-    bottom: 140px;
-    right: 150px;
+    bottom: 100px;
+    right: 200px;
     width: 140px;
 }
 
 @media (max-width:1200px) {
-    .intro {
-        padding: 100px 80px;
-    }
-
     .welcome-content p {
         width: 80%;
-    }
-
-    .welcome-bg {
-        width: 280px;
-        top: 560px;
-        left: -150px;
     }
 
     .discover-bg {
@@ -244,7 +243,7 @@
 
 @media (max-width:1024px) {
     .intro {
-        padding: 60px;
+        padding-bottom: 50px;
     }
 
     .welcome-content p,
@@ -264,7 +263,7 @@
     }
 
     .welcome-bg {
-        top: 500px;
+        bottom: -80px;
     }
 
     /* .discover */
@@ -287,23 +286,20 @@
 
     .discover-overlay {
         bottom: 100px;
-        right: 80px;
+        right: 120px;
+        width: 120px;
     }
 }
 
 @media (max-width:768px) {
-    .intro {
-        padding: 40px;
-    }
-
     .welcome-content h2 {
         font-size: 1.4rem;
         padding-bottom: 30px;
     }
 
     .welcome-content p {
-        width: 80%;
-        padding-bottom: 60px;
+        width: 90%;
+        padding-bottom: 40px;
         font-size: 0.9rem;
     }
 
@@ -312,9 +308,9 @@
     }
 
     .welcome-bg {
-        top: 400px;
-        left: -120px;
-        width: 250px;
+        top: 450px;
+        left: -140px;
+        width: 230px;
     }
 
     /* .discover */
@@ -346,6 +342,7 @@
 
     .discover-content p {
         font-size: 0.9rem;
+        padding-bottom: 10px;
     }
 
     .discover-img {
@@ -355,22 +352,25 @@
     }
 
     .discover-overlay {
-        bottom: 0;
-        right: 60px;
+        bottom: 50px;
+        right: 100px;
         width: 100px;
     }
 }
 
-@media (max-width:768px) {
-    .welcome-content p {
-        width: 100%;
+@media (max-width:576px) {
+    .discover-bg img {
+        width: 250px;
     }
 
-    .welcome-img-box {
-        width: 100%;
+    .discover-overlay {
+        bottom: 30px;
+        right: 80px;
+        width: 90px;
     }
 }
 
+/* explore */
 .explore .container-fluid {
     padding: 0;
 }
@@ -386,18 +386,15 @@
 .explore-card {
     background: #6F1C11;
     width: 35%;
-    height: 90%;
-}
-
-.explore {
-    position: relative;
-}
-
-.explore-card {
+    height: 65%;
     position: absolute;
     top: 40%;
     right: 40px;
     transition: 0.3s;
+}
+
+.explore {
+    position: relative;
 }
 
 .explore-card:hover {
@@ -434,19 +431,24 @@
 }
 
 .explore-card-content h4 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 25px;
 }
 
 .explore-card-content p {
-    font-size: 0.9rem;
+    line-height: 2;
 }
 
 @media (max-width:1200px) {
     .explore-card-content h4 {
         font-size: 1.1rem;
+    }
+
+    .explore-card {
+        width: 40%;
+        height: 70%;
     }
 }
 
@@ -473,7 +475,7 @@
 
     .explore-card {
         width: 45%;
-        height: 110%;
+        height: 70%;
     }
 
     .explore-card-content p {
@@ -492,10 +494,10 @@
 }
 
 @media (max-width:576px) {
-
     .explore-card {
+        top: 45%;
         width: 65%;
-        height: 130%;
+        height: 75%;
     }
 
     .explore-card-content {
@@ -504,10 +506,6 @@
 }
 
 /* news */
-.news {
-    padding: 150px 180px 0 180px;
-}
-
 .news h2 {
     padding-bottom: 30px;
 }
@@ -566,20 +564,12 @@
 }
 
 @media (max-width:1024px) {
-    .news {
-        padding: 150px 60px 0 60px;
-    }
-
     .news-item-content h5 {
         font-size: 1.3rem;
     }
 }
 
 @media (max-width:768px) {
-    .news {
-        padding: 130px 40px 0 40px;
-    }
-
     .news-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -602,34 +592,22 @@
     }
 }
 
-@media (max-width:700px) {
-    .news {
-        padding-top: 150px;
-    }
-}
-
 @media (max-width:576px) {
+    .news {
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+
     .news-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
-    .news {
-        padding-top: 120px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
 }
 
 /* quote */
-.quote {
-    margin-top: 100px;
-    padding-bottom: 50px;
-    position: relative;
-}
-
 .quote-text {
+    position: relative;
     text-align: center;
     padding-bottom: 70px;
 }
@@ -647,14 +625,16 @@
 
 .upper-quotation {
     position: absolute;
-    top: -5%;
+    top: -30%;
     left: 25%;
+    font-weight: bold;
 }
 
 .bottom-quotation {
     position: absolute;
-    left: 68%;
-    transform: rotateZ(180deg);
+    top: 50%;
+    right: 30%;
+    font-weight: bold;
 }
 
 
@@ -743,6 +723,16 @@
     margin-bottom: 10%;
 }
 
+@media (max-width:1440px) {
+    .box-3 img {
+        transform: translate(-84%, -25%);
+    }
+
+    .box-4 img {
+        transform: translate(-84%, -75%);
+    }
+}
+
 @media (max-width:1024px) {
     .quote-text h2 {
         width: 40%;
@@ -753,7 +743,7 @@
     }
 
     .bottom-quotation {
-        left: 70%;
+        right: 25%;
     }
 
     .image-grid-box {
@@ -780,11 +770,6 @@
 }
 
 @media (max-width:768px) {
-    .quote {
-        margin-top: 0;
-        padding-bottom: 0;
-    }
-
     .quote-text {
         padding-bottom: 60px;
     }
@@ -795,14 +780,6 @@
 
     .quotation-mark {
         font-size: 4rem;
-    }
-
-    .upper-quotation {
-        left: 22%;
-    }
-
-    .bottom-quotation {
-        left: 72%;
     }
 
     .image-grid-box {
@@ -844,15 +821,15 @@
     }
 
     .upper-quotation {
-        left: 0%;
+        left: 0;
     }
 
     .bottom-quotation {
-        left: 84%;
+        right: 10%;
     }
 
     .image-grid-box {
-        height: 500px;
+        height: 450px;
     }
 
     .box-2 img {

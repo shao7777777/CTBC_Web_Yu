@@ -9,12 +9,6 @@
     align-items: center;
     margin-bottom: 150px;
     position: relative;
-    transition: 0.3s;
-}
-
-.news-item:hover .news-content {
-    transform: translateX(-5px);
-    transition: 0.3s;
 }
 
 .news-image {
@@ -68,6 +62,12 @@
     font-size: 24px;
     margin-bottom: 15px;
     color: #3c1e0f;
+    transition: 0.3s;
+}
+
+.news-item:hover .news-content h3 {
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .news-content p {
