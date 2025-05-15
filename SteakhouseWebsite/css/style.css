@@ -8,6 +8,10 @@
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* banner */
 .banner {
     position: relative;

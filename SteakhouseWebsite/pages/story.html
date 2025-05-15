@@ -11,8 +11,8 @@
 
     <!-- Link AOS's CSS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr. net/npm/swiper@11/swiper-bundle.min.css"/>
+	<!-- Animista CSS -->
+	<link rel="stylesheet" href="../css/animista.css" />
 
     <link rel="stylesheet" href="../css/share.css" />
     <link rel="stylesheet" href="../css/story.css" />
@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-md-3 align-items-center">
 					<a href="../index.html">
-						<img src="../img/logo.svg" alt="" class="img-logo" />
+						<img src="../img/logo.svg" alt="" class="img-logo scale-up-center" />
 					</a>
 				</div>
 				<div class="col-md-9 d-flex justify-content-end align-items-center">
@@ -52,7 +52,7 @@
 			<!-- logo -->
                 <div class="col-6 d-flex align-items-center">
                     <a href="../index.html">
-                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid" />
+                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid scale-up-center" />
                     </a>
                 </div>
                 <!-- hamburger -->
@@ -83,7 +83,7 @@
         <img src="../img/story-banner.jpg" alt="" class="img-fluid">
 		<div class="overlay"></div>
         <div class="page-banner-text">
-            <h1>About Our Story!</h1>
+            <h1 class="tracking-in-contract">About Our Story!</h1>
             <p>關於我們的故事</p>
         </div>
         <div class="breadcrumb-wrapper">
@@ -103,13 +103,13 @@
 
 	<!-- chef-introduce -->
 	<section class="chef">
-		<div class="chef-quote d-flex justify-content-center align-content-center">
+		<div class="chef-quote d-flex justify-content-center align-content-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
 			<h3>“ 料理不是表演，而是一場堅持的藝術。我希望每位顧客吃下第一口時，都能感受到我們對細節的重視。”</h3>
 		</div>
 		<div class="container-fluid chef-bg">
 			<div class="row d-flex justify-content-center align-items-center">
 				<div class="col-md-6">
-					<div class="IDphoto-box">
+					<div class="IDphoto-box" data-aos="zoom-in-right" data-aos-duration="1000">
 						<img src="../img/chef.jpg" alt="主廚 Mark Davis" class="img-fluid">
 					</div>
 				</div>
@@ -117,9 +117,9 @@
 					<div class="content">
 						<span class="subtitle"></span>
 						<h2>主廚介紹</h2>
-						<p>主廚 Mark Davis 是土生土長的美國人，從年輕時就立志將西式料理推向極致。並進入美國知名的 Culinary Institute of America (CIA) 進修，專攻乾式熟成與法式烹飪技術。</p>
-						<p>在紐約著名的米其林二星牛排館任職五年後，他決定創立「American Steakhouse」，希望把「尊重食材」的理念傳遞給更多人。</p>
-						<p>他的團隊每日清晨即開始處理熟成肉品，每一道菜從切割到調味皆親自檢查，烹飪團隊平均經歷超過 10 年，是國內少數以熟成牛排為專業的餐廳。</p>
+						<p data-aos="fade-up" data-aos-duration="500">主廚 Mark Davis 是土生土長的美國人，從年輕時就立志將西式料理推向極致。並進入美國知名的 Culinary Institute of America (CIA) 進修，專攻乾式熟成與法式烹飪技術。</p>
+						<p data-aos="fade-up" data-aos-duration="700">在紐約著名的米其林二星牛排館任職五年後，他決定創立「American Steakhouse」，希望把「尊重食材」的理念傳遞給更多人。</p>
+						<p data-aos="fade-up" data-aos-duration="900">他的團隊每日清晨即開始處理熟成肉品，每一道菜從切割到調味皆親自檢查，烹飪團隊平均經歷超過 10 年，是國內少數以熟成牛排為專業的餐廳。</p>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 	<section class="beef-info section-space">
 		<div class="info-title">
 			<i class="bi bi-stars"></i>
-			<h2>食材理念</h2>
+			<h2 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">食材理念</h2>
 			<i class="bi bi-stars"></i>
 		</div>
 		<div class="grid-container">
@@ -222,6 +222,12 @@
 			</div>
 		</div>
 	</footer>
+
+    <!-- Link AOS's JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // 初始化 AOS
+    </script>
 
 	<script src="../main.js"></script>
 </body>

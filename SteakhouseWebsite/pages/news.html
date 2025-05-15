@@ -11,8 +11,8 @@
 
     <!-- Link AOS's CSS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr. net/npm/swiper@11/swiper-bundle.min.css"/>
+	<!-- Animista CSS -->
+	<link rel="stylesheet" href="../css/animista.css" />
 
     <link rel="stylesheet" href="../css/share.css" />
     <link rel="stylesheet" href="../css/news.css" />
@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-md-3 align-items-center">
 					<a href="../index.html">
-						<img src="../img/logo.svg" alt="" class="img-logo" />
+						<img src="../img/logo.svg" alt="" class="img-logo scale-up-center" />
 					</a>
 				</div>
 				<div class="col-md-9 d-flex justify-content-end align-items-center">
@@ -52,7 +52,7 @@
 			<!-- logo -->
                 <div class="col-6 d-flex align-items-center">
                     <a href="../index.html">
-                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid" />
+                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid scale-up-center" />
                     </a>
                 </div>
                 <!-- hamburger -->
@@ -83,7 +83,7 @@
         <img src="../img/news-banner.jpg" alt="最新消息" class="img-fluid">
 		<div class="overlay"></div>
         <div class="page-banner-text">
-            <h1>Latest News</h1>
+            <h1 class="tracking-in-contract">Latest News</h1>
             <p>最新消息</p>
         </div>
         <div class="breadcrumb-wrapper">
@@ -102,10 +102,10 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-6">
 					<div class="news-item">
-						<div class="news-image">
+						<div class="news-image" data-aos="fade-up-left">
 							<img src="../img/flower.jpg" alt="母親節優惠" class="img-fluid">
 						</div>
-						<div class="news-content">
+						<div class="news-content" data-aos="fade-right" data-aos-duration="1000">
 							<span class="label"><i class="bi bi-megaphone-fill"></i> 最新消息</span>
 							<span class="date">2025/05/01</span>
 							<h3>母親節限定套餐開賣！</h3>
@@ -115,10 +115,10 @@
 				</div>
 				<div class="col-lg-12 col-md-6">
 					<div class="news-item">
-						<div class="news-image">
+						<div class="news-image" data-aos="fade-up-left">
 							<img src="../img/20off.jpg" alt="新品上市" class="img-fluid">
 						</div>
-						<div class="news-content">
+						<div class="news-content" data-aos="fade-right" data-aos-duration="1000">
 							<span class="label"><i class="bi bi-megaphone-fill"></i> 最新消息</span>
 							<span class="date">2025/04/16</span>
 							<h3>週三牛排日，全場八折！</h3>
@@ -128,10 +128,10 @@
 				</div>
 				<div class="col-lg-12 col-md-6">
 					<div class="news-item">
-						<div class="news-image">
+						<div class="news-image" data-aos="fade-up-left">
 							<img src="../img/store.jpg" alt="新開幕門市" class="img-fluid">
 						</div>
-						<div class="news-content">
+						<div class="news-content" data-aos="fade-right" data-aos-duration="1000">
 							<span class="label"><i class="bi bi-megaphone-fill"></i> 最新消息</span>
 							<span class="date">2025/03/01</span>
 							<h3>新開幕門市：台中中友店</h3>
@@ -141,10 +141,10 @@
 				</div>
 				<div class="col-lg-12 col-md-6">
 					<div class="news-item">
-						<div class="news-image">
+						<div class="news-image" data-aos="fade-up-left">
 							<img src="../img/ibericoribeye.jpg" alt="新品上市" class="img-fluid">
 						</div>
-						<div class="news-content">
+						<div class="news-content" data-aos="fade-right" data-aos-duration="1000">
 							<span class="label"><i class="bi bi-megaphone-fill"></i> 最新消息</span>
 							<span class="date">2025/02/17</span>
 							<h3>頂級伊比利豬肋眼牛排 隆重登場</h3>
@@ -154,10 +154,10 @@
 				</div>
 				<div class="col-lg-12 col-md-6">
 					<div class="news-item">
-						<div class="news-image">
+						<div class="news-image" data-aos="fade-up-left">
 							<img src="../img/interview.jpg" alt="媒體報導" class="img-fluid">
 						</div>
-						<div class="news-content">
+						<div class="news-content" data-aos="fade-right" data-aos-duration="1000">
 							<span class="label"><i class="bi bi-megaphone-fill"></i> 最新消息</span>
 							<span class="date">2025/01/08</span>
 							<h3>本店主廚專訪登上《料理職人誌》</h3>
@@ -215,6 +215,12 @@
 	</footer>
 
 	<button id="backToTop">↑</button>
+
+	<!-- Link AOS's JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // 初始化 AOS
+    </script>
 
 	<script src="../main.js"></script>
 </body>

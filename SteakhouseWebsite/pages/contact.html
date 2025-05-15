@@ -11,8 +11,8 @@
 
     <!-- Link AOS's CSS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr. net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Animista CSS -->
+	<link rel="stylesheet" href="../css/animista.css" />
 
     <link rel="stylesheet" href="../css/share.css" />
     <link rel="stylesheet" href="../css/contact.css" />
@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-md-3 align-items-center">
 					<a href="../index.html">
-						<img src="../img/logo.svg" alt="" class="img-logo" />
+						<img src="../img/logo.svg" alt="" class="img-logo scale-up-center" />
 					</a>
 				</div>
 				<div class="col-md-9 d-flex justify-content-end align-items-center">
@@ -52,7 +52,7 @@
 			<!-- logo -->
                 <div class="col-6 d-flex align-items-center">
                     <a href="../index.html">
-                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid" />
+                    <img src="../img/logo.svg" alt="" class="img-logo img-fluid scale-up-center" />
                     </a>
                 </div>
                 <!-- hamburger -->
@@ -83,7 +83,7 @@
         <img src="../img/contact-banner.jpg" alt="聯絡我們" class="img-fluid">
 		<div class="overlay"></div>
         <div class="page-banner-text">
-            <h1>Contact Us</h1>
+            <h1 class="tracking-in-contract">Contact Us</h1>
             <p>聯絡我們</p>
         </div>
         <div class="breadcrumb-wrapper">
@@ -100,7 +100,7 @@
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 image-box">
+                <div class="col-md-6 image-box" data-aos="flip-left" data-aos-duration="500">
                     <img src="../img/welcome.jpg" alt="歡迎您" class="img-fluid">
                 </div>
                 <div class="col-md-6 align-content-center">
@@ -209,6 +209,12 @@
 	</footer>
 
 	<button id="backToTop">↑</button>
+
+    <!-- Link AOS's JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();  // 初始化 AOS
+    </script>
 
 	<script src="../main.js"></script>
 </body>
