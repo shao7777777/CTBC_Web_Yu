@@ -150,14 +150,20 @@ input[type="submit"]:hover {
 
 @media (max-width:576px) {
     .contact-content {
-        margin-top: 20px;
+        padding: 0;
+        margin: 30px 10px 15px;
     }
 
     .map {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .map iframe {
         height: 400px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 20px;
     }
 }

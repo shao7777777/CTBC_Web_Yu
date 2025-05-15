@@ -14,7 +14,7 @@
     display: flex;
     width: 100%;
     padding: 15px;
-    background: #c9c1ba;
+    background: #ebe2d9;
     color: #000;
     cursor: pointer;
     font-weight: 400;
@@ -57,7 +57,7 @@ input[type="checkbox"]:checked+.faq-question::after {
 }
 
 input[type="checkbox"]:checked+.faq-question+.faq-answer {
-    max-height: 100px;
+    max-height: 120px;
     /* 展開區塊 */
     padding: 15px 15px;
     padding-bottom: 10px;
